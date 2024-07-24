@@ -1,0 +1,268 @@
+/*Css for the title of the website in nav bar*/
+h1 {
+    font-size: 2vw;
+    padding-left: 2vw;
+    color: white;
+    font-family: qualy;
+}
+
+/*Makes website title in nav bar uppercase and geo font*/
+.title2{
+    font-family: geo;
+    text-transform: uppercase;
+}
+
+/*class for coloring things red*/
+.red{
+    color: red;
+}
+
+/*Css for the container of the nav bar at the top*/
+.top {
+    width: 100%; 
+    height: 5vw;
+    border: solid black 1px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+/*Css for the three links at the top right in the nav bar*/
+.lnk {
+    float: right;
+    padding-right: 5vw;
+    font-size: 1vw;
+    color: white;
+    font-family: futuraL;
+}
+
+/*Styling links while hovering over them. makes them grey when hovered*/
+.lnk:hover {
+    text-decoration: none; 
+    color: grey; 
+}
+
+/*Css for the welcome title*/
+h2 {
+    text-align: center;
+    margin-top: 5vw;
+    font-size: 6vw;
+    font-family: louisB;
+}
+
+/*makes all html tags with p1 be at font size 1vw and font family FuturaL*/
+p1 {
+    font-size: 1vw;
+    font-family: futuraL;
+}
+
+/*Cuts the images in the carosuel to fit in the div, anything part of the image that does not fit gets cut off*/
+.img-cut {
+    width: 100%;
+    height: 30vw;
+    overflow: hidden;
+}
+
+/*sizes the that are shown in the caroseul*/
+.img-size {
+    width: 100%;
+}
+
+/*adds margin to top carousel*/
+.carousel {
+    margin-top: 2vw;
+}
+
+/*customizing the carousel indicators to be circle like and coloured differently*/
+.carousel-indicators li {
+    width: 0.75vw;
+    height: 0.75vw;
+    border-radius: 10000px;
+    color: white; 
+    border: 1px solid;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+/*styles the links that are in the carousel*/
+.lnk-cut{
+    height: 24px; 
+    width: 180px; 
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+/*styles both the start course and start exam buttons*/
+.bton {
+    height: 3vw;
+    width: 14vw; 
+    border-radius: 3px;
+    border: none;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 7vw;
+    margin-bottom: 2vw;
+}
+
+/*makes buttons lighter when hovered*/
+.bton:hover {
+    background-color: #FF4636;
+}
+
+/*Centers the lesson buttons*/
+.lessons{
+    text-align: center;
+}
+
+/*cuts the button images which are square to be more circular*/
+.img-cut2{
+    overflow: hidden;
+    height: 14.5vw; 
+    width: 14.5vw; 
+    border-radius: 15vw;
+    display: inline-block;
+}
+
+/*styles the welcome description under the welcome title*/
+.welcomeTxt{
+    font-size: 1.25vw;
+}
+
+/*adjusts the images sizes of each lesson button*/
+.img-size2{
+    height: 14.5vw;
+    width: 14.5vw; 
+}
+
+/*styles the carousel's links, makes the links white and have no underline*/
+.cHere{
+    text-decoration: none;
+    color: white; 
+}
+
+/*changes the color of the carousel links when hovering*/
+.cHere:hover {
+    text-decoration: none;
+    color: darkgray;
+}
+
+/*Styles the definition title that is above the definitions*/
+.DefTitle {
+    text-align: center;
+    font-family: futuraB;
+    font-size: 3vw;
+    margin-top: 15vw;
+    margin-bottom: 1vw;
+}
+
+/*styles the first type of box in the definitions set, makes it darker grey*/
+.box1{
+    background-color: #4D4D4D;
+    margin-top: 0.1vw;
+    border-right: 0.1vw solid white;
+    padding: 1vw;
+    color: white;
+}
+
+/*styles the second type of box in the definitions set, makes it lighter grey*/
+.box2{
+    background-color: #6E6E6E;
+    margin-top: 0.1vw;
+    border-right: 0.1vw solid white;
+    padding: 1vw;
+    color: white;
+}
+
+/*the next two classes make the definition boxes slighly darker when hovering over them*/
+.box1:hover{
+    background-color: #424242;
+}
+
+.box2:hover{
+    background-color: #636363;
+}
+
+/*Style for definition descriptions*/
+.DefinitionT{
+    font-family: louisR;
+    font-size: 1.1vw;
+}
+
+/*styling for the words that are being defined*/
+.DefinitionW{
+    font-family: futuraD;
+    font-size: 1.75vw;
+}
+
+/*adds spacing under the definition boxes*/
+.block{
+    margin-top: 10vw;
+}
+
+/*custom container for the exam text and button*/
+.custom-container3{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+}
+
+/*Css for the title exam*/
+.exam{
+    font-size: 7vw;
+    font-family: louisB;
+    text-align: center;
+}
+
+/*Css for the exam description*/
+.examDes{
+    font-size: 1.5vw;
+    font-family: louisL;
+    text-align: center;
+}
+
+/*Fonts!*/
+@font-face {
+    font-family: 'futuraB';
+    src: url('Fonts/FuturaPTBold.otf');
+}
+
+@font-face {
+    font-family: 'futuraD';
+    src: url('Fonts/FuturaPTDemi.otf');
+}
+
+@font-face {
+    font-family: 'futuraL';
+    src: url('Fonts/FuturaPTLight.otf');
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url("Fonts/GeosansLight.ttf");
+}
+
+@font-face {
+    font-family: 'louisB';
+    src: url('Fonts/LouisGeorgeCafeBold.ttf');
+} 
+
+@font-face {
+    font-family: 'louisR';
+    src: url('Fonts/LouisGeorgeCafe.ttf')
+}
+
+@font-face {
+    font-family: 'louisL';
+    src: url('Fonts/LouisGeorgeCafeLight.ttf');
+}
+
+@font-face {
+    font-family: 'qualy';
+    src: url('Fonts/Qualy-Bold.ttf');
+}
+/*End of fonts!*/

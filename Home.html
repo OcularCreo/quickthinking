@@ -1,0 +1,390 @@
+<!-- This project was done by Jordan Cooligan Pang. As instructed for those who are doing the project independently, I made the website targeted to only one audience, 11 - 18 year olds.   -->
+
+<html>
+    <head>
+        <title>Home</title>
+        <!-- Adding in Jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Adding in boostrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Adding responsive design with bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Home.css" rel="stylesheet" type="text/css">
+        <!-- Adding in animations DIVS WITH CLASSES SUCH AS WOW, ANIMATION TYPE, AND DELAY-NMS ARE FOR ANIMATION-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    </head>
+    <body>
+        <!-- This is for the top nav bar -->
+        <header class="wow fadeInDown">
+            <div class="row top">
+                <!-- conatiner holding website name -->
+                <div class="col-lg-6">
+                    <h1><span class="title1">Quick</span><span class="title2">Th<span class="red">i</span>nking</span></h1>
+                </div>
+                <!-- container holding links to Exam, Lessons, and Home page. -->
+                <div class="col-lg-6">
+                    <a class="lnk" href="Home.html#exam">Exam</a>
+                    <a class="lnk" href="Home.html#less">Lessons</a>
+                    <a class="lnk" href="Home.html">Home</a>
+                </div>
+            </div>
+        </header>
+        <!-- container holding welcome and description text -->
+        <div class="container wow fadeIn delay-1s">
+            <h2>Welcome</h2>
+        <p1 class="welcomeTxt">Here at QuickThinking, we will be giving you a few brief lessons on the medieval era. We will first start off with what it was like to live in medieval times. Then we will look into one of histories biggest moments, the pandemic of the black plague. Finally we will end our unit with the ending of the mideval age, as we will begin to discuss the renaissance.</p1>
+        </div>
+        <!-- start of carosel -->
+        <div id="carouselCaptions" class="carousel slide wow fadeInRight delay-2s" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- first carosuel item -->
+                <div class="carousel-item active">
+                    <!-- carosuel image -->
+                    <div class="img-cut">
+                        <img class="img-size" src="https://i.pinimg.com/originals/76/34/e6/7634e6409be3630299081ca8bbdf1dd5.jpg">
+                    </div>
+                    <!-- carosuel text and link -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lesson 1: Living in the Middle Ages</h5>
+                        <div class="lnk-cut"><a class="cHere" href="Lesson1.html"><p>Click here to start lesson</p></a></div>
+                    </div>
+                </div>
+                <!-- second carosuel item-->
+                <div class="carousel-item">
+                    <!-- carosuel image -->
+                    <div class="img-cut">
+                        <img class="img-size" src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/d3/d3d8/d3d82b0b-9bf2-4082-ab04-66ed53196ccc/6ae08086-cafc-4cfe-b8d8-c3849c4136db.jpg">
+                    </div>
+                    <!-- carosuel text and link -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lesson 2: The Black Plague</h5>
+                        <div class="lnk-cut"><a class="cHere" href="Lesson2.html"><p>Click here to start lesson</p></a></div>
+                    </div>
+                </div>
+                <!-- final carosuel item -->
+                <div class="carousel-item">
+                    <!-- carosuel image -->
+                    <div class="img-cut">
+                        <img class="img-size" src="https://brewminate.com/wp-content/uploads/2018/12/121318-01-Italian-Renaissance-History.jpg">
+                    </div>
+                    <!-- carosuel text and link -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lesson 3: The Renaissance</h5>
+                        <div class="lnk-cut"><a class="cHere" href="Lesson3.html"><p>Click here to start lesson</p></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of carosuel -->
+        <!-- start lesson html -->
+        <div style="text-align: center;" class="wow fadeInDown">
+            <button id="less" class="bton" onclick="location.href='Lesson1.html'">Start Course</button>
+        </div>
+        <!-- conatiner holding each lesson button -->
+        <div class="container custom">
+            <div class="row lessons">
+                <!-- first lesson button -->
+                <div class="col-lg-4 wow fadeIn delay-1s">
+                    <div class="img-cut2">
+                        <a href="Lesson1.html"><img onmouseover="btnSwitchOn(this, 1)" onmouseout="btnSwitchOff(this, 1)" class="img-size2" src="Images/MLButtons-04.png"></a>
+                    </div>
+                </div>
+                <!-- second lesson button -->
+                <div class="col-lg-4 wow fadeIn delay-2s">
+                    <div class="img-cut2">
+                        <a href="Lesson2.html"><img onmouseover="btnSwitchOn(this, 2)" onmouseout="btnSwitchOff(this, 2)" class="img-size2" src="Images/BDButtons-03.png"></a>
+                    </div>
+                </div>
+                <!-- third lesson button -->
+                <div class="col-lg-4 wow fadeIn delay-3s">
+                    <div class="img-cut2">
+                        <a href="Lesson3.html"><img onmouseover="btnSwitchOn(this, 3)" onmouseout="btnSwitchOff(this, 3)" class="img-size2" src="Images/RenButtons-02.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container holding exam content -->
+        <div class="custom-container3" id="exam">
+            <!-- title -->
+            <h5 class="exam wow fadeInDown">Exam</h5>
+            <!-- description of exam -->
+            <p3 class="examDes wow fadeInUp">After you have studied each lesson and passed every quiz, feel free to try the exam. If you need to review the lessons one more time, click on the buttons above. You will have 45 minutes to answer 30 questions. To pass the exam you will need a final grade of 80% or higher. Good luck! </p3>
+            <!-- button to start exam -->
+            <div style="text-align: center;">
+            <button id="less" class="bton wow fadeInDown delay-1s" onclick="location.href='Exam.html#start'">Start Exam</button>
+            </div>
+        </div>
+        <div class="custom-container2">
+            <h6 class="DefTitle wow fadeIn">Defin<span class="red">i</span>tions</h6>
+        </div>
+        <!-- container holding all of the definitions -->
+        <div class="container custom">
+            <!-- Definition 1 -->
+            <div class="row" id="ana">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Anatomy</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">Anatomy is the branch of biology which is concerned with the study of the structure of organisms and their parts. Anatomy is a branch of the natural sciences that deals with the structural organization of living things.</p2></div>
+            </div>
+            <!-- Definition 2 -->
+            <div class="row" id="bio">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Biomechanics</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">Biomechanics is the science of movement in a living body, including how muscles, bones, tendons and ligaments work together to move. Biomechanics is part of the broader field of kinesiology, focusing specifically on the mechanics of the movement.</p2></div>
+            </div>
+            <!-- Definition 3 -->
+            <div class="row" id="blo">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Bloodletting</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">Bloodletting is the withdrawal of blood from a patient to prevent or cure illness and disease.</p2></div>
+            </div>
+            <!-- Definition 4 -->
+            <div class="row" id="bub">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Buboes</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">Buboes are a symptom of bubonic plague and manifest as painful swelling of the thighs, neck, groin or armpits. They are caused by the bacteria Yersinia pestis spreading from flea bites through the bloodstream to the lymph nodes, where the bacteria replicate, causing the nodes to swell.</p2></div>
+            </div>
+            <!-- Definition 5 -->
+            <div class="row" id="cap">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Capitalist Economy</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">Capitalism is an economic system in which individuals or companies own capital goods. The production of goods and services is based on supply and demand on the general market rather than on central planning.</p2></div>
+            </div>
+            <!-- Definition 6 -->
+            <div class="row" id="cle">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Clergy</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">The clergy are an official leader within established religions. Their roles and functions vary according to religious traditions but generally involve presiding over specific rituals and teaching the doctrines and practices of their religion.</p2></div>
+            </div>
+            <!-- Definition 7 -->
+            <div class="row" id="coa">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Coat of Arms</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">The coat of arms, the main part of a system of hereditary symbols dating back to the beginning of medieval Europe, was mainly used to establish identity in combat.</p2></div>
+            </div>
+            <!-- Definition 8 -->
+            <div class="row" id="com">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Commune</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">A commune is an intentional community of people living together, sharing common interests, often having common values and beliefs.</p2></div>
+            </div>
+            <!-- Definition 9 -->
+            <div class="row" id="cru">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Crusaders</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">A crusader is a person who participated in one of the military expeditions undertaken by the Christian powers in the 11th, 12th and 13th centuries to gain the Holy Land for Muslims.</p2></div>
+            </div>
+            <!-- Definition 10 -->
+            <div class="row" id="dis">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Dissect</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">To dissect something is to cut it methodically to study its internal parts.</p2></div>
+            </div>
+            <!-- Definition 11 -->
+            <div class="row" id="feu">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Feudalism (Feudal Economy)</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">Feudalism was a combination of legal, economic, military and cultural customs that flourished in medieval Europe between the 9th and 15th centuries. Broadly defined, it was a means of structuring society around relationships derived from the possession of land in exchange for services or work.</p2></div>
+            </div>
+            <!-- Definition 12 -->
+            <div class="row" id="fie">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Fief</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">A fief was the central element of feudalism. These were hereditary goods or rights granted by a suzerain to a vassal who held them in exchange for a form of feudal allegiance and service, generally given by personal ceremonies of homage and loyalty.</p2></div>
+            </div>
+            <!-- Definition 13 -->
+            <div class="row" id="gui">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Guilds</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">A guild is an association of craftsmen or traders who oversee the practice of their craft/trade in a particular area. The first types of guilds consisted of brotherhoods of traders, normally operating in a single city and covering a single trade.</p2></div>
+            </div>
+            <!-- Definition 14 -->
+            <div class="row" id="imm">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Immunities</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">In biology, immunity is the balanced state of multicellular organisms with adequate biological defences to fight infections, diseases or other undesirable biological invasions, while having an adequate tolerance to avoid allergies and autoimmune diseases.</p2></div>
+            </div>
+            <!-- Definition 15 -->
+            <div class="row" id="inh">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Inheritance</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">An inheritance includes the assets of an estate that are bequeathed, in whole or in part, to specific heirs.</p2></div>
+            </div>
+            <!-- Definition 16 -->
+            <div class="row" id="kin">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Kinsmen</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">A Kinsman is a man who is one of a person's blood relations.</p2></div>
+            </div>
+            <!-- Definition 17 -->
+            <div class="row" id="lor">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Lords</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">The Lord is an appellation for a person or a deity who has authority, control or power over others, acting as a master, leader or leader.</p2></div>
+            </div>
+            <!-- Definition 18 -->
+            <div class="row" id="mer">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Mercenary</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">A mercenary, sometimes called a soldier of fortune, is an individual who participates in a military conflict for personal gain, is otherwise a stranger to the conflict and is not a member of any other official army. Mercenaries fight for money or other forms of payment rather than for political interests.</p2></div>
+            </div>
+            <!-- Definition 19 -->
+            <div class="row" id="mon">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Monarchy</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">A motte-and-bailey castle is a fortification with a wooden or stone dungeon located on a raised ground called a motte, accompanied by an enclosed courtyard, or bailey, surrounded by a protective ditch and a palisade.</p2></div>
+            </div>
+            <!-- Definition 20 -->
+            <div class="row" id="mot">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Motte-and-bailey</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">A motte-and-bailey castle is a fortification with a wooden or stone dungeon located on a raised ground called a motte, accompanied by an enclosed courtyard, or bailey, surrounded by a protective ditch and a palisade.</p2></div>
+            </div>
+            <!-- Definition 21 -->
+            <div class="row" id="mys">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Mysticism</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">Mysticism is the practice of religious ecstasies with all the ideologies, ethics, rites, myths, legends and magic that can be linked to it.</p2></div>
+            </div>
+            <!-- Definition 22 -->
+            <div class="row" id="nat">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Naturalism</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">Naturalism in art refers to the representation of realistic objects in a natural setting. The realistic movement of the 19th century advocated naturalism in reaction to stylized and idealized representations of the subjects of Romanticism, but many painters have used a similar approach over the centuries.</p2></div>
+            </div>
+            <!-- Definition 23 -->
+            <div class="row" id="nob">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Noble</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">A nobleman is someone who belongs to a hereditary class with a high social or political status.</p2></div>
+            </div>
+            <!-- Definition 24 -->
+            <div class="row" id="nom">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Nomadic</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">Most nomadic groups follow a fixed annual or seasonal pattern of movement and settlement. Nomadic peoples traditionally travel by animal or canoe or on foot.</p2></div>
+            </div>
+            <!-- Definition 25 -->
+            <div class="row" id="occ">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Occultist</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">An occultist is a person who believes in the supernatural and the power of magic.</p2></div>
+            </div>
+            <!-- Definition 26 -->
+            <div class="row" id="ove">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Overlords</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">An overlord, or suzerain, in the English feudal system, was a lord of a manor who had given a manor, a succession or particular expenses, to a tenant.</p2></div>
+            </div>
+            <!-- Definition 27 -->
+            <div class="row" id="pan">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Pandemic</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">A pandemic is an epidemic of disease that has spread in a large region, for example, several continents or in the world, affecting a significant number of people.</p2></div>
+            </div>
+            <!-- Definition 28 -->
+            <div class="row" id="pea">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Peace of God</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">An exemption from an attack in the feudal war requested by the church from the end of the 9th century for all peoples and all consecrated places and later for all those who claimed the protection of the church.</p2></div>
+            </div>
+            <!-- Definition 29 -->
+            <div class="row" id="peas">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Peasants</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">A peasant is a pre-industrial farm worker or farmer with limited land ownership, particularly a feudal resident of the Middle Ages and paying rent, taxes, fees or services to a landlord. In Europe, there were three classes of peasants: slaves, serfs and free tenants.</p2></div>
+            </div>
+            <!-- Definition 30 -->
+            <div class="row" id="phy">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Physicians</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">A physician, a medical practitioner or quite simply a doctor is a professional who practices medicine, which aims to promote, maintain or restore health by the study, diagnosis, prognosis and treatment of diseases, injuries and other physical and mental disorders.</p2></div>
+            </div>
+            <!-- Definition 31 -->
+            <div class="row" id="pil">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Pillaging</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">Looting, also referred to as sacking, ransacking, plundering, despoiling, despoliation, and pillaging, is the indiscriminate taking of property by force in the context of a military or political victory, or during a disaster, such as a war, a natural disaster or a riot.</p2></div>
+            </div>
+            <!-- Definition 32 -->
+            <div class="row" id="pri">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Primogeniture</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">Primogeniture is the right, by law or custom, of the first legitimate son to inherit the whole or principal succession of his parents, in preference to the inheritance shared by all or certain children, any illegitimate child or any collateral parent.</p2></div>
+            </div>
+            <!-- Definition 33 -->
+            <div class="row" id="rea">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Realism</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">ARealism in the arts is generally the attempt to represent a subject honestly, without artifice and by avoiding artistic conventions or implausible, exotic and supernatural elements.</p2></div>
+            </div>
+            <!-- Definition 34 -->
+            <div class="row" id="rem">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Remuneration</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">Remuneration is compensation or other financial compensation provided in exchange for services rendered by an employee. Several additional benefits in addition to wages are increasingly popular compensation mechanisms. Compensation is an element of reward management.</p2></div>
+            </div>
+            <!-- Definition 35 -->
+            <div class="row" id="sca">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Scapegoat</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">The scapegoat is the practice of distinguishing an individual or group from undeserved blame and the resulting negative treatment.</p2></div>
+            </div>
+            <!-- Definition 36 -->
+            <div class="row" id="sie">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Siege</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">A siege is a military blockade of a city or a fortress, to conquer by attrition or a well-prepared assault. Siege warfare is a form of constant low-intensity conflict characterized by a strong and static defensive position.</p2></div>
+            </div>
+            <!-- Definition 37 -->
+            <div class="row" id="sil">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Silk Road</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">The Silk Road was a network of trade routes connecting East and West and was at the heart of economic, cultural, political and religious interactions between these regions from the 2nd century BCE to the 18th century.</p2></div>
+            </div>
+            <!-- Definition 38 -->
+            <div class="row" id="squ">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Squire</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">From the Middle Ages, a squire was wearing a shield or a knight's armour.</p2></div>
+            </div>
+            <!-- Definition 39 -->
+            <div class="row" id="sub">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Subordinate</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">A subordinate is a lower level or an item classified at a lower level</p2></div>
+            </div>
+            <!-- Definition 40 -->
+            <div class="row" id="subser">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Subservient</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">Dominance and submission, also called submission, are a set of behaviours, customs and rituals involving the submission of one person to another in an erotic episode or a way of life.</p2></div>
+            </div>
+            <!-- Definition 41 -->
+            <div class="row" id="vas">
+                <div class="col-lg-4 box1"><h3 class="DefinitionW">Vassals</h3></div>
+                <div class="col-lg-8 box1"><p2 class="DefinitionT">A vassal is a person considered to have a mutual obligation towards a lord or a monarch, in the context of the feudal system of medieval Europe. The obligations often included military support of the knights in exchange for certain privileges, including land held as tenant or fief.</p2></div>
+            </div>
+            <!-- Definition 42 -->
+            <div class="row" id="wag">
+                <div class="col-lg-4 box2"><h3 class="DefinitionW">Wages</h3></div>
+                <div class="col-lg-8 box2"><p2 class="DefinitionT">A wage is a monetary compensation paid by an employer to an employee in exchange for the work performed. Payment can be calculated as a fixed amount for each task completed, or at an hourly or daily rate, or based on an easily measurable amount of work.</p2></div>
+            </div>
+        </div>
+        <!-- end of definitions -->
+    </body>
+    <!-- this adds space to the bottom of the screen -->
+    <div class="block">
+    </div>
+    <!-- Javascript for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        
+        //This funciton makes the lesson buttons turn dark when hovered
+        function btnSwitchOn(obj, i){
+            if(i == 1){
+                obj.src = 'Images/MLButtons-06.png';
+            } else if (i == 2){
+                obj.src = 'Images/BDButtons-05.png';
+            } else {
+                obj.src = 'Images/RenButtons-01.png';
+            }
+        }
+        //This function resets the lesson button images after exiting hovering
+        function btnSwitchOff(obj2, j){
+            if(j == 1){
+                obj2.src = 'Images/MLButtons-04.png'; 
+            } else if (j == 2){
+                obj2.src = 'Images/BDButtons-03.png';
+            } else {
+                obj2.src = 'Images/RenButtons-02.png';
+            }
+        }
+        
+        var wow = new WOW(
+              {
+                boxClass:     'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset:       0,          // distance to the element when triggering the animation (default is 0)
+                mobile:       true,       // trigger animations on mobile devices (default is true)
+                live:         true,       // act on asynchronously loaded content (default is true)
+                callback:     function(box) {
+                  // the callback is fired every time an animation is started
+                  // the argument that is passed in is the DOM node being animated
+                },
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                resetAnimation: true,     // reset animation on end (default is true)
+              }
+            );
+            wow.init();
+        
+    </script>
+    
+    
+
+</html>

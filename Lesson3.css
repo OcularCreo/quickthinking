@@ -1,0 +1,411 @@
+/*Styles the title of the website in the top left of the navbar*/
+h1 {
+    font-size: 2vw;
+    padding-left: 2vw;
+    color: white;
+    font-family: qualy;
+}
+
+/*Styles the second part of the title in the navbar. (The word Thinking)*/
+.title2{
+    font-family: geo;
+    text-transform: uppercase;
+}
+
+/*Styles the container of the navbar at the top*/
+.top {
+    width: 100%; 
+    height: 5vw;
+    border: solid black 1px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+/*Styles each link at the top right of the nav bar*/
+.lnk {
+    float: right;
+    padding-right: 5vw;
+    font-size: 1vw;
+    color: white;
+    font-family: futuraL;
+}
+
+/*Styles each link when hovered*/
+.lnk:hover {
+    text-decoration: none; 
+    color: grey; 
+}
+
+/*Styles the banner container and gives it a background image*/
+.banner1{
+    width: 100%; 
+    height: 30vw;
+    background-image: url('https://www.visittuscany.com/shared/visittuscany/immagini/blogs/idea/david-michelangelo-big.jpg?__scale=cx:282,cy:26,cw:1501,ch:876,w:1371,h:800,t:2,q:85');
+    background-size: cover;
+    background-position: middle;
+}
+
+/*Styles the banner title the renaissance*/
+.bannerTitle{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-family: louisB;
+    font-size: 8vw;
+    padding-top: 10vw;
+}
+
+/*Aything with this class gets colored red. Normally used to color the letter I in titles*/
+.red{
+    color: red;
+}
+
+/*Custom container used for the topic and introduction content*/
+.custom-container{
+    width: 100%;
+    padding-left: 15vw; 
+    padding-right: 15vw;
+    margin-top: 3vw;
+}
+
+/*Styles the title named topics*/
+.topic-title{
+    font-size: 3.25vw;
+    font-family: futuraD;
+    text-transform: uppercase;
+}
+
+/*Styles each topic link*/
+.topics{
+    display: block;
+    font-family: futuraL;
+    font-size: 1.25vw;
+    color: #808080;
+}
+
+/*Styels each topic link while hovered*/
+.topics:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*Styles the intro title*/
+.intro-title{
+    font-size: 2.75vw;
+    font-family: futuraD;
+    text-transform: uppercase;
+}
+
+/*Styles the intro/lesson discription*/
+.intro-text{
+    font-size: 1.25vw;
+    font-family: geo;
+} 
+
+/*Adds a vertical black line on the left of the intro container*/
+.vLine{
+    border-left: solid black 0.25vw;
+    padding-left: 1.5vw;
+}
+
+/*Used to make my own personal custom container. Custom containers are used for the majority of sections in this lesson*/
+.custom-container2{
+    width: 100%;
+    padding-left: 15vw; 
+    padding-right: 15vw;
+    margin-top: 10vw; 
+}
+
+/*Used to style each description of every topic/part of the lesson*/
+.para {
+    font-family: futuraL;
+    font-size: 1.5vw; 
+}
+
+/*Used for the title of every part of the lesson*/
+.paraTitle{
+    font-size: 3vw;
+    font-family: FuturaD;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+
+/*Same prupose as ParaTitle, but centers the title too*/
+.paraTitle-center{
+    font-size: 3vw;
+    font-family: FuturaD;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.5vw;
+}
+
+/*Styles the first set of images (really just the medici symbol)*/
+.imgSet1{
+    width: 100%;
+    margin-top: 6vw; 
+}
+
+/*Styles the only video shown*/
+.video1{
+    width: 100%;
+    height: 36vw;
+    margin-top: 5vw;
+}
+
+/*Styles the second set of images. Under the video in the second part of the lesson*/
+.imgSet2{
+    width: 100%;
+    margin-top: 2vw;
+}
+
+/*Styles the image for the third part of the lesson. The image of human muscles*/
+.imgSet3{
+    width: 100%; 
+    margin-top: 6.5vw;
+}
+
+/* Does nothing
+.imgSet4{
+    width: 22vw; 
+    height: 30vw;
+    margin-top: 4vw;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}*/
+
+/*Styles the sizing of each physician image container*/
+.imgSet5{
+    background-position: center;
+    background-size: cover;
+    width: 22vw;
+    height: 30vw;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+/*background image for physician image container: William Harvey*/
+.port1{
+    background-image: url("https://d3d00swyhr67nd.cloudfront.net/w1200h1200/collection/EDII/RCPY/EDII_RCPY_PCF_25-001.jpg");
+}
+
+/*background image for physician image container: Leonardo Da Vinci*/
+.port2{
+    background-image: url("https://s.abcnews.com/images/International/Leonardo-da-vinci-file-gty-ml-190502_hpMain_4x5_992.jpg");
+}
+
+/*background image for physician image container: Andreas Vesalius*/
+.port3{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f7/Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg");
+}
+
+/*background image for physician image container: Girolamio Francastro*/
+.port4{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/72/Titian_Girolamo_Fracastoro.jpg");
+}
+
+/*background image for physician image container: Paracelsus*/
+.port5{
+    background-image: url("https://www.onthisday.com/images/people/paracelsus-medium.jpg");
+}
+
+/*background image for physician image container: Ambroise Pare*/
+.port6{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/Ambroise_Par%C3%A9.jpg");
+}
+
+/*Styling for each physician name (there's a 2 at the end because this was my second attempt at making this work...)*/
+.nameTxt2{
+    color: white; 
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+/*Styles the physician's description text*/
+.persTxt{
+    height: 100%;
+    font-size: 1.2vw;
+    color: white;
+    font-family: louisR;
+}
+
+/* also useless
+.info{
+    font-size: 1vw;
+    text-align: center;
+}
+*/
+
+/*Styles the black background that shows when hovered*/
+.cover{
+    width: 22vw;
+    height: 30vw;
+    padding: 1.5vw;
+    background-color: black;
+    opacity: 0%;
+    position: absolute;
+}
+
+/*styles the physicians title and text*/
+.cover-content{
+    width: 22vw;
+    height: 30vw;
+    padding: 1.5vw;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    cursor: pointer;
+}
+
+/*Styles another type of custom container. Mainly used for the pictures of the physicians*/
+.custom-container3{
+    width: 100%;
+    padding-left: 15vw; 
+    padding-right: 15vw;
+    margin-top: 1.5vw; 
+}
+
+/*Styesl the quiz description*/
+.quiztxt{
+    font-size: 1vw;
+    font-family: louisR;
+    display: block;
+    text-align: right;
+}
+
+/*Styles the quiz button*/
+.quizButton{
+    width: 100%;
+    height: 5vw;
+    font-size: 1.5vw;
+    font-family: futurad;
+    text-transform: uppercase;
+    border-radius: 0.5vw;
+    background-color: red;
+    color: white;
+}
+
+/*Makes anything with this class bold*/
+.bold{
+    font-weight: bold;
+}
+
+/*Styles words/links that are linked to definitions*/
+.kword{
+    color: red;
+}
+
+/*Styles links/words when hovered*/
+.kword:hover{
+    color: red;
+}
+
+
+/*container for topic 4 images*/
+.img-cont1{
+    width: 39.7vw;
+    height: 30vw;
+    background-position: center;
+    background-size: 39.7vw;
+    background-repeat: no-repeat;
+    margin-top: 2vw;
+}
+
+/*style for black background cover shown when hovered over either of the two images in topic 4*/
+.cover1{
+    position: absolute;
+    width: 39.7vw;
+    height: 30vw;
+    background-color: black;
+    opacity: 0%;
+}
+
+/*container for topic 4 images*/
+.img-cont2{
+    width: 28vw;
+    height: 30vw;
+    background-position: center;
+    background-size: 29vw;
+    background-repeat: no-repeat;
+    margin-top: 2vw;
+}
+
+/*style for black background cover shown when hovered over either of the two images in topic 4*/
+.cover2{
+    position: absolute;
+    width: 28vw;
+    height: 30vw;
+    background-color: black;
+    opacity: 0%;
+}
+
+/*styles all text that shows up ontop of image*/
+.img-txt{
+    position: relative;
+    text-align: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    color: white;
+    font-family: louisB;
+    font-size: 1.75vw;
+    text-transform: capitalize;
+}
+
+
+/*styles text under image when image is hovered*/
+.img-title{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    font-family: louisB;
+    text-transform: capitalize;
+}
+
+
+
+/*My fonts*/
+@font-face {
+    font-family: 'futuraB';
+    src: url('Fonts/FuturaPTBold.otf');
+}
+
+@font-face {
+    font-family: 'futuraD';
+    src: url('Fonts/FuturaPTDemi.otf');
+}
+
+@font-face {
+    font-family: 'futuraL';
+    src: url('Fonts/FuturaPTLight.otf');
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url("Fonts/GeosansLight.ttf");
+}
+
+@font-face {
+    font-family: 'louisB';
+    src: url('Fonts/LouisGeorgeCafeBold.ttf');
+} 
+
+@font-face {
+    font-family: 'louisR';
+    src: url('Fonts/LouisGeorgeCafe.ttf')
+}
+
+@font-face {
+    font-family: 'louisL';
+    src: url('Fonts/LouisGeorgeCafeLight.ttf');
+}
+
+@font-face {
+    font-family: 'qualy';
+    src: url('Fonts/Qualy-Bold.ttf');
+}

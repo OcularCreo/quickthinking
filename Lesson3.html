@@ -1,0 +1,457 @@
+<html>
+    <head>
+        <title>Lesson 3: The Renaissance</title>
+        <!-- Adding in Jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Adding in boostrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Adding responsive design with bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="Images/TabIcons-09.png">
+        <link href="Lesson3.css" rel="stylesheet" type="text/css">
+        <!-- Adding in animations DIVS WITH CLASSES SUCH AS WOW, ANIMATION TYPE, AND DELAY-NMS ARE FOR ANIMATION-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    </head>
+    <!-- Top bar with website title and navigation -->
+    <header>
+        <div class="row top wow fadeInDown">
+            <!-- Website title -->
+            <div class="col-lg-6">
+                <h1 class="title"><span class="title1">Quick</span><span class="title2">Th<span class="red">i</span>nking</span></h1>
+            </div>
+            <!-- Website naviagtion links -->
+            <div class="col-lg-6">
+                <a class="lnk" href="Home.html#exam">Exam</a>
+                <a class="lnk" href="Home.html#less">Lessons</a>
+                <a class="lnk" href="Home.html">Home</a>
+            </div>
+        </div>
+    </header>
+    <body>
+        <!-- Top banner container with image as background image -->
+        <div class="banner1 wow fadeInUp">
+            <!-- Title of banner: The Renaissance -->
+            <h3 class='bannerTitle wow fadeInUp delay-1s'>The Renaissance</h3>
+        </div>
+        <div class="custom-container wow fadeIn delay-2s">
+            <div class="row">
+                <!-- container holding links/shortcuts to each part of the lesson -->
+                <div class="col-lg-6">
+                    <h3 class="topic-title">Top<span class="red">i</span>cs</h3>
+                    <a class="topics" href="#cha">Changing Economic Structures</a>
+                    <a class="topics" href="#new">A New Art Style</a>
+                    <a class="topics" href="#adv">Advancements in Medicine</a>
+                    <a class="topics" href="#phys">Renaissance Physicians</a>
+                </div>
+                <!-- container with intro title and text -->
+                <div class="col-lg-6 vLine">
+                    <!-- Intro title -->
+                    <h3 class="intro-title"><span class="red">i</span>ntroduction</h3>
+                    <!-- Intro text -->
+                    <p1 class="intro-text">Welcome to the final lesson of this brief course on Medieval Times. Here we will end the course moving through how the medieval era ended and how the world continued to grow by taking a look at The Renaissance. The word renaissance literally means rebirth, which was very fitting for the time period that is marked by many drastic changes including to the arts, the economy, and medicine. The name was also a symbol for humanity reforming as they had just come out of the Black Plague. As you will most definitely notice, the heart of The Renaissance takes place in Italy, where there was a concentration of wealth, power, and intellect at the time. Scroll down to continue the lesson or click on any of the topics on the right to skip ahead.</p1>
+                </div>
+            </div>
+        </div>
+        <!-- Container for first part of the lesson -->
+        <div class="custom-container2">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- title of part 1 of the lesson: Chainging Economic Structures -->
+                    <h4 id="cha" class="paraTitle wow fadeInRight">Chang<span class="red">i</span>ng Economic Structures</h4>
+                    <!-- Text/explanation for the first part of the lesson. Any links lead to the definitions page -->
+                    <p2 class="para wow fadeInRight">There was a revival of trade and commerce that took place during the late middle ages that created new ways of earning wealth. By the early 1500’s, the <a href="Home.html#feu" class="kword">feudal economy</a> was replaced by a <a href="Home.html#cap" class="kword">capitalist economy</a>. It was starting to become an important trend to spend money in order to earn money. There was an increase in lending money in order to earn interest on it, which went against church law but nevertheless occurred. Banking systems at the time were established by the most wealthy families who could lend their money to people with interest attached. One of these families would be the Medici. They became one of the wealthiest families in all of Europe and would, for the most part, work behind the scenes. The system of lending money to people and keeping records of these financial interactions would later influence the creation of modern credit systems. </p2>
+                </div>
+                <!-- container holding the image -->
+                <div class="col-lg-4">
+                    <!-- Image of Medici symbol -->
+                    <img onmouseover="hovRevealAlt(this, 1, 0, 0)" onmouseout="hovRevealAlt(this, 0, 0, 0)" class="imgSet1 wow fadeInUp" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Medici_popes.svg">
+                    <!-- text element that reveals text when image is hovered -->
+                    <h4 class="img-title"></h4>
+                </div>
+            </div>
+        </div>
+        <!-- container holding the second part of the lesson -->
+        <div class="custom-container2">
+            <!-- Title of second part of the lesson: A New Art Style -->
+            <h4 id="new" class="paraTitle-center wow fadeInDown">A New Art Style</h4>
+            <!-- Text/Explaination for the second part of the lesson. The links lead to the definitions page -->
+            <p2 class="para wow fadeIn">In the Middle Ages, people were often purposely depicted smaller than religious figures to show the insignificance of humanity. Renaissance artists rejected the conventions of the Middle Ages, and instead chose to glorify humans and place them at the center of the universe. At this time, artists began to focus on perfect human form rather than displaying any imperfections. Perspective was also rediscovered and practiced more often, allowing artists to create paintings that were much more realistic and created a sense of depth. Sculptures were heavily influenced by the renewed interest in classical works and the trend towards <a href="Home.html#nat" class="kword">naturalism</a>. Naturalism was a mix of <a href="Home.html#rea" class="kword">realism</a> with <a href="Home.html#mys" class="kword">mysticism</a>. It was made to depict the ability and beauty of the human body. Many characteristics were adopted from Greek and Roman art. This new style of art was meant to capture the experience of the individual and a reflection of daily life for the common people, unlike the old medieval style.</p2>
+            <div class="row">
+                <!-- Container for video -->
+                <div class="col-lg-12">
+                    <!-- Video: Why babies in medieval paintings look like ugly old men -->
+                    <iframe class="video1 wow fadeInDown" src="https://www.youtube.com/embed/xFcF_qfLHeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- New row and container holding two images. 1 medieval and the other renaissance  -->
+            <div class="row">
+                <!-- Renaissance painting image -->
+                <div class="col-lg-7 wow fadeInLeft">
+                    <div onmouseover="hovRevealAlt(this, 1, 1, 1)" onmouseout="hovRevealAlt(this, 0, 1, 1)" class="img-cont1" style="background-image: url(https://ca-times.brightspotcdn.com/dims4/default/44faeb3/2147483647/strip/true/crop/2000x1526+0+0/resize/1486x1134!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd3%2F41%2Fc5af4e034bd4b2fa8d91f83bda3d%2Fadorationofthemagi.jpg)">
+                        <!-- black background container that reveals black background when image is hovered -->
+                        <div class="cover1"></div>
+                        <!-- text element that reveals text when image is hovered -->
+                        <h4 class="img-txt" style="padding-top: 13vw"></h4>
+                    </div>
+                </div>
+                <!-- Medieval painting image -->
+                <div class="col-lg-5 wow fadeInRight">
+                    <div onmouseover="hovRevealAlt(this, 1, 1, 2)" onmouseout="hovRevealAlt(this, 0, 1, 2)" class="img-cont2" style="background-image: url(https://i0.wp.com/www.escapeintolife.com/wp-content/uploads/2010/04/3538689598_58856b6a55_b.jpg?resize=629%2C922)">
+                        <!-- black background container that reveals black background when image is hovered -->
+                        <div class="cover2"></div>
+                        <!-- text element that reveals text when image is hovered -->
+                        <h4 class="img-txt" style="padding-top: 13vw;"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container for the third part of the lesson -->
+        <div class="custom-container2">
+            <div class="row">
+                <!-- conatiner for the image used in this part of the lesson -->
+                <div class="col-lg-4">
+                    <!-- Drawaing of the muscles of a human -->
+                    <img class="imgSet3 wow fadeInUp" src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/2529/2017/10/04230844/media_25155_medium.jpeg">
+                </div>
+                <!-- conatiner with this part of the lesson's title and explaination -->
+                <div class="col-lg-8">
+                    <!-- Title of the third part of the lesson -->
+                    <h4 id="adv" class="paraTitle wow fadeInRight">Advancements in Med<span class="red">i</span>cine</h4>
+                    <!-- Text/Explaination of the third part of the lesson. words that are links go to their definition on the home page -->
+                    <p class="para wow fadeIn">A major change that The Renaissance provided to society was a significant development in medicine. What generated the shift in medical practices was the new acceptance society and law had for <a href="Home.html#dis" class="kword">dissection</a> of human corpses. Before The Renaissance, the church believed it to be wrong to dissect a person’s corpse. This was because they thought that dissecting a body would take away the dignity of the deceased, who should be buried whole. The new process of dissection allowed <a href="Home.html#phy" class="kword">physicians</a> to carry out numerous amounts of anatomical studies, leading to the discovery of many important aspects of human <a href="Home.html#ana" class="kword">anatomy</a>. Another important aspect of medical development in The Renaissance was the transfer of medical techniques from the middle east. Physicians from the Islamic world had made many important medical breakthroughs, and through the return of <a href="Home.html#cru" class="kword">crusaders</a> and Muslims fleeing to Europe, European physicians learned of the different practices that were done in the middle east, allowing them to apply these techniques and discoveries to their own work.  </p>
+                </div>
+            </div>
+        </div>
+        <!-- Container for the fourth part of the lesson. -->
+        <div class="custom-container2">
+            <div class="row">
+                <!-- Title for the fourth part of the lesson -->
+                <h2 class="paraTitle wow fadeInRight" id="phys">Renaissance Phys<span class="red">i</span>cians</h2>
+                <!-- Intro paragraphy for the fourth part of the lesson. words that are links lead to their definition on the home page -->
+                <p2 class="para wow fadeIn">Significant medical advancements were made during The Renaissance, that became the foundation of the medical system of modern time.  The early understanding of the human <a href="Home.html#ana" class="kword">anatomy</a>, the skeletal structure, the understanding and treatment of infectious diseases started here.  There are six notable scholars and doctors who were the first of their kind to discover the principles that now form the basis of our medical knowledge. <span class="bold">Hover or click on the images below to reveal information about each physician!</span></p2>
+                <br>
+            </div>
+        </div>
+        <!-- container holding the first set (3 images) of images -->
+        <div class="custom-container3">
+            <div class="row">
+                <!-- First image container -->
+                <div class="imgSet5 port1 wow fadeInLeft" onmouseover="reveal(this, 0, 1, -1)" onmouseout="reveal(this, 0, 0, -1)" onclick="reveal(this, 0, 0, 1)">
+                    <!-- container for black background when hovered/clicked -->
+                    <div class="cover">
+                    </div>
+                    <!-- container holding text elements -->
+                    <div class="cover-content">
+                        <!-- Name element -->
+                        <h5 class="nameTxt2">william harvey</h5>
+                        <!-- Explanation of physician element. only shows when hovered or clicked -->
+                        <p3 class="persTxt"></p3>
+                    </div>
+                </div>
+                <!-- Second image container -->
+                <div class="imgSet5 port2 wow fadeInDown" onmouseover="reveal(this, 1, 1, -1)" onmouseout="reveal(this, 1, 0, -1)" onclick="reveal(this, 1, 0, 1)">
+                    <!-- container for black background when hovered/clicked -->
+                    <div class="cover">
+                    </div>
+                    <!-- container for text elements -->
+                    <div class="cover-content">
+                        <!-- Name Element: Leonardo -->
+                        <h5 class="nameTxt2">leonardo da vinci</h5>
+                        <!-- Explaination of physician element. only shows when hovered or clicked -->
+                        <p3 class="persTxt"></p3>
+                    </div>
+                </div>
+                <!-- Third Image container -->
+                <div class="imgSet5 port3 wow fadeInRight" onmouseover="reveal(this, 2, 1, -1)" onmouseout="reveal(this, 2, 0, -1)" onclick="reveal(this, 2, 0, 1)">
+                    <!-- container for the black background when hovered/clicked -->
+                    <div class="cover">
+                    </div>
+                    <!-- Container for the text elements -->
+                    <div class="cover-content">
+                        <!-- name element: Andreas vesalius -->
+                        <h5 class="nameTxt2">andreas vesalius</h5>
+                        <!-- Explaination of physician element. only shows when hovered/clicked -->
+                        <p3 class="persTxt"></p3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Conatiner holding second set of images ( the remaining 3) -->
+        <div class="custom-container3">
+            <div class="row">
+                <!-- Fourth image container -->
+                <div class="imgSet5 port4 wow fadeInLeft" onmouseover="reveal(this, 3, 1, -1)" onmouseout="reveal(this, 3, 0, -1)" onclick="reveal(this, 3, 0, 1)">
+                    <!-- container for black background when hovered/clicked -->
+                    <div class="cover">
+                    </div>
+                    <!-- container for the text elements -->
+                    <div class="cover-content">
+                        <!-- name element: girolamo francastro -->
+                        <h5 class="nameTxt2">girolamo francastro</h5>
+                        <!-- Exlaination of pyhsician element. Only shows when hovered/clicked -->
+                        <p3 class="persTxt"></p3>
+                    </div>
+                </div>
+                <!-- Fifth image container -->
+                <div class="imgSet5 port5 wow fadeInUp" onmouseover="reveal(this, 4, 1, -1)" onmouseout="reveal(this, 4, 0, -1)" onclick="reveal(this, 4, 0, 1)">
+                    <!-- container for black background when hovered/clicked -->
+                    <div class="cover">
+                    </div>
+                    <!-- container for text elements -->
+                    <div class="cover-content">
+                        <!-- physician name element: Paracelsus -->
+                        <h5 class="nameTxt2">Paracelsus</h5>
+                        <!-- explaination of physician element. Only shows whne hovered/clicked -->
+                        <p3 class="persTxt"></p3>
+                    </div>
+                </div>
+                <!-- sixth image container -->
+                <div class="imgSet5 port6 wow fadeInRight" onmouseover="reveal(this, 5, 1, -1)" onmouseout="reveal(this, 5, 0, -1)" onclick="reveal(this, 5, 0, 1)">
+                    <!-- container for black background when hovered/clicked -->
+                    <div class="cover">
+                    </div>
+                    <!-- container for text elements -->
+                    <div class="cover-content">
+                        <!-- name element: Ambroise pare -->
+                        <h5 class="nameTxt2">Ambroise Pare</h5>
+                        <!-- explanation of physician element. only shows when hovered/clicked -->
+                        <p3 class="persTxt"></p3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container holding quiz explaination and button -->
+        <div class="custom-container2">
+            <div class="row">
+                <!-- Quiz description/explaination -->
+                <div class="col-lg-9 wow fadeInLeft">
+                    <p3 class="quiztxt">Finished going over this lessons material? If you don't feel ready try reviewing the lesson one more time. Make sure to watch all the videos and read all the text. Once you're confident with what you know, begin the quiz! Grades UNDER 70% do not pass and should go over the lesson again before reattempting the quiz. You have 15 minutes to complete the quiz, good luck! </p3>
+                </div>
+                <!-- Quiz button -->
+                <div class="col-lg-3">
+                    <button id="quiz" onclick="location.href='Quiz3.html#start'" class="quizButton wow fadeInUp">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+        <!-- Container that adds space under the quiz explaination and button -->
+        <div class="custom-container2"></div>
+    </body>
+    <!-- Javascript for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <!-- Javascript -->
+    <script>
+        
+        //Jquery for the animations that are being used.
+        var wow = new WOW(
+              {
+                boxClass:     'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset:       0,          // distance to the element when triggering the animation (default is 0)
+                mobile:       true,       // trigger animations on mobile devices (default is true)
+                live:         true,       // act on asynchronously loaded content (default is true)
+                callback:     function(box) {
+                  // the callback is fired every time an animation is started
+                  // the argument that is passed in is the DOM node being animated
+                },
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                resetAnimation: true,     // reset animation on end (default is true)
+              }
+            );
+            wow.init();
+        
+        //   *****   MY JAVASCRIPT BEGINS HERE   *****
+        
+        //This variable helps determine which picture the user has and has not clicked yet.
+        var AltCSwitch = [0, 0, 0, 0, 0, 0];
+        
+        //This function toggles revealing the text by either clicking or hovering. requires the object/container, the id of the physician, the bool of if it is hovering, and the bool of if it was clicked.
+        function reveal(cont, PhyId, Hbool, Cbool){
+            
+            //gets the children of the container holding the background and text
+            var childG1 = cont.children;
+            //gets the children of the container holding two text elements (this is the second generation of the first set of children gathered from the previous line)
+            var childG2 = childG1[1].children; 
+            
+            //Checking if the image was clicked
+            if(Cbool == 1){
+                //checks if the image has already been clicked previously
+                //When AltCSwith at index PhyID has already been turned on, meaning equals 1, then it resets to 0
+                //If it has not been turned on then it gets turned on, meaning set to 1. 
+                
+                if(AltCSwitch[PhyId] == 1){
+                    AltCSwitch[PhyId] = 0;
+                } else {
+                    AltCSwitch[PhyId] = 1;
+                } 
+                //calls the clicking reveal function no matter what. 
+                CReveal(childG1, childG2, PhyId);
+                
+            //only calls hover reveal function if the click reveal has been turned off of the certain image.   
+            } else if(AltCSwitch[PhyId] == 0){
+                hovReveal(childG1, childG2, Hbool, PhyId);
+            }
+            
+            
+            
+        }
+        
+        //This function toggles showing the text and the black background on hover.
+        function hovReveal(G1, G2, Hbool, PhyId){
+            
+            //checks if hovering is true or not
+            if(Hbool){
+                //Calls the showing function that reveals the content
+                Showing(G1, G2, PhyId);  
+            } else {
+                switch(PhyId){
+                    case 0:
+                        G2[1].innerHTML = "";
+                        G1[0].style.opacity = "0%";
+                        break; 
+                    case 1: 
+                        G2[1].innerHTML = "";
+                        G1[0].style.opacity = "0%";
+                        break;
+                    case 2: 
+                        G2[1].innerHTML = "";
+                        G1[0].style.opacity = "0%";
+                        break;
+                    case 3: 
+                        G2[1].innerHTML = "";
+                        G1[0].style.opacity = "0%";
+                        break;
+                    case 4: 
+                        G2[1].innerHTML = "";
+                        G1[0].style.opacity = "0%";
+                        break;
+                    case 5: 
+                        G2[1].innerHTML = "";
+                        G1[0].style.opacity = "0%";
+                        break;
+                }
+                    
+            }
+            
+            
+        }
+        
+        //this function will make the text and background stay while the mouse exits and the image has been clicked
+        function CReveal(G1, G2, PhyId){
+            
+            if(AltCSwitch[PhyId] == 1){
+                Showing(G1, G2, PhyId);
+            }
+            
+        }
+        
+        //Function that reveals the content when needed. Keeps me from writing this same block of code twice.
+        function Showing(G1, G2, PhysId){
+            
+            //reveals background and text depending on which div is being hovered. each should have it's own unique text.
+            switch(PhysId){
+                    case 0:
+                        G2[1].innerHTML = "William Harvey was an English doctor who was the first to describe how the human circulatory system works, along with the description of blood properties and how the heart works to circulate blood through the human body.";
+                        G1[0].style.opacity = "75%";
+                        break; 
+                    case 1: 
+                        G2[1].innerHTML = "Leonardo Da Vinci was an Italian man of many talents, including an expert in human anatomy, derived from dissecting human corpses to study tendons, bones, and muscles, which formed the subject of a book on anatomy, including illustrations. Of significant note, he was the pioneer of biomechanics, the study of the skeletal structure, and how muscles make bones move.";
+                        G1[0].style.opacity = "75%";
+                        break;
+                    case 2: 
+                        G2[1].innerHTML = "Andreas Vesalius was a Flemish doctor who wrote the first most important book (“De Humani Corporis Fabrica”) on anatomy based upon his extensive experience in dissecting and analyzing corpses.";
+                        G1[0].style.opacity = "75%";
+                        break;
+                    case 3: 
+                        G2[1].innerHTML = "Girolamo Fracastoro was an Italian doctor who first identified that disease is caused by pathogens that originate from outside the body and can be passed directly or indirectly between people.";
+                        G1[0].style.opacity = "75%";
+                        break;
+                    case 4: 
+                        G2[1].innerHTML = "Paracelsus was a German doctor, scholar and occultist who first identified the benefits of using chemicals and minerals in the human body, including the need for the body to be in harmony with nature to avoid disease, which could be created through the balance of chemicals and minerals.";
+                        G1[0].style.opacity = "75%";
+                        break;
+                    case 5: 
+                        G2[1].innerHTML = "Ambroise Pare was a French surgeon and forensic pathologist who treated soldiers injured in battle, and invented surgical instruments used in surgery.";
+                        G1[0].style.opacity = "75%";
+                        break;
+                        
+                }
+        }
+        
+        
+        //   **** this javascript was made after all of the previous javascript, and I realize that some have very similar functions... but this still works soooooooooo yeah.... 
+        
+        
+        //this function has text and background be revealed when called.
+        function hovRevealAlt(obj, Hbool, CBool, type){
+            
+            //getting the children of the object
+            var chil = obj.children;
+            //getting the parent element of the element
+            var par = obj.parentElement;
+            //getting an array of the children in the parent element
+            var childH = par.children;
+            
+            //this variable will be the position of the text element that needs to be edited depending on the type of image.
+            var txtPos;
+            //varibale for the for loop
+            var i; 
+            //for loop finds where the given object is located in the parent element's array of children
+            for(i = 0; i < childH.length; i++){
+                if(childH[i] == obj){
+                    //when the object pos is found in the array we add i to txtpos because the text element will always be the position after the object that was sent. 
+                    txtPos = i + 1;
+                }
+            }
+            
+            //check if the object hovered will have a background/cover
+            if(CBool){
+                
+                //make the background visible and invisible when hovered depending on the hover boolean
+                if(Hbool){
+                chil[0].style.opacity = '75%';
+                //calls the reveal function that edits the innerHTML of the object which is unqiue to each type
+                revealAlt(type, chil[1]);
+                } else {
+                    //when Hbool is not true we always set the cover opacity to 0 and erase whatever is in the html text element
+                    chil[0].style.opacity = '0%';
+                    chil[1].innerHTML ="";
+                }
+                
+            } else {
+                
+                //This block of code is for those images with no backgrounds.
+                if(Hbool){
+                    //when the image is hoverd we call reveal function and send the childH at position txtPos which should always work out to be the txt element after the image
+                    revealAlt(type, childH[txtPos]);
+                } else {
+                    //when not hovered we always erease the txt in the html element
+                    childH[txtPos].innerHTML = "";
+                }
+                
+            }
+            
+            
+            
+        }
+        
+        
+        //This function edits the innerhtml of the given object, each object requires their own unqiue edit.
+        function revealAlt(type, txt){
+            if(type == 0){
+                txt.innerHTML = "the medici coat of arms";
+            } else if (type == 1){
+                txt.innerHTML = "a painting from the renaissance";
+            } else {
+                txt.innerHTML = "a painting from the medieval era";
+            }
+
+        }
+        
+        
+        //     *****      END OF MY JAVASCRIPT     *****
+        
+        
+        
+    </script>
+</html>

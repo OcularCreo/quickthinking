@@ -1,0 +1,719 @@
+<hmtl>
+    <head>
+        <title>Quiz 2: The Black Death</title>
+        <!-- Adding in Jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Adding in boostrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Adding responsive design with bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Quiz1.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="start">
+        <!-- Top bar with website title and timer -->
+        <header>
+            <div class="row top">
+                <!-- container for title -->
+                <div class="col-lg-6">
+                    <h1 class="title"><span class="title1">Quick</span><span class="title2">Th<span class="red">i</span>nking</span></h1>
+                </div>
+                <!-- container for timer -->
+                <div class="col-lg-6">
+                    <h2 class="timer" id="TT"></h2>
+                </div>
+            </div>
+        </header>
+        <!-- question set 1 -->
+        <div class="custom-container">
+            <!-- container for the actual questions -->
+            <div class="row">
+                <h2 class="question">People began to settle in towns and cities because...</h2>
+            </div>
+            <!-- container for the potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 0, 0)">A. There was more available resources</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 1)">B. The threat of hostile nomadic tribes</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 2)">C. To try to join higher classes</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 3)">D. None of the Above</p1>
+            </div>
+        </div>
+        <!-- question set 2 -->
+        <div class="custom-container">
+            <!-- container for the actual question -->
+            <div class="row">
+                <h2 class="question">Fief and lord are the same thing.</h2>
+            </div>
+            <!-- container for the potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 1, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 1, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 3 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">The Black Plague and the Black Death were two different plagues in medieval history.</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 2, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 2, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 4 -->
+        <div class="custom-container">
+            <!-- container for actual questions -->
+            <div class="row">
+                <h2 class="question">Before the Renaissance, why did the church believe that dissecting a dead corpse was wrong?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 3, 0)">A. Dissecting a body would bring the soul of the body to hell</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 3, 1)">B. Infections or diseases would be transferred to the person dissecting</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 3, 2)">C. The soul of the body would escape and reign terror on the village</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 3, 3)">D. Dignity of the deceased would be taken away</p1>
+            </div>
+        </div>
+        <!-- question set 5 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">What religious group was used as a scapegoat for the spread of the plague?</h2>
+            </div>
+            <!-- cointainer for potential questions -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 4, 0)">A. Christians</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 1)">B. Muslims</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 2)">C. Atheists</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 3)">D. Jews</p1>
+            </div>
+        </div>
+        <!-- question set 6 -->
+        <div class="custom-container">
+            <!-- conatiner for actual question -->
+            <div class="row">
+                <h2 class="question">Paracelsus was a French doctor, scholar and occulist</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 5, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 5, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 7 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">What shape could you compare a feudalistic economy to?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 6, 0)">A. Triangle</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 1)">B. Square</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 2)">C. Hexagon</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 3)">D. Web</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 4)">E. None of the above</p1>
+            </div>
+        </div>
+        <!-- question set 8 -->
+        <div class="custom-container">
+            <!-- container for acutal question -->
+            <div class="row">
+                <h2 class="question">The plague was capable of infecting...</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 7, 0)">A. Humans</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 1)">B. Pigs</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 2)">C. Sheep</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 3)">D. Chickens</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 4)">E. All the above</p1>
+            </div>
+        </div>
+        <!-- question set 9 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question"> What is biomechanics the study of?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 8, 0)">A. Medical equipment</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 8, 1)">B. Cell function</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 8, 2)">C. Movement of the body</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 8, 3)">D. Organ function</p1>
+            </div>
+        </div>
+        <!-- question set 10 -->
+        <div class="custom-container">
+            <!-- Container for actual questions -->
+            <div class="row">
+                <h2 class="question"> As a knight, what is the most important code that you must follow?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 9, 0)">A. The Templar code</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 1)">B. The code of Sir Lancelot</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 2)">C. Chivalry</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 3)">D. Ethics</p1>
+            </div>
+        </div>
+        <!-- question set 11 -->
+        <div class="custom-container">
+            <!-- container for the actual questions -->
+            <div class="row">
+                <h2 class="question">Which of the following was a shortage of material during the Black Death? </h2>
+            </div>
+            <!-- container for the potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 10, 0)">A. Eggs</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 10, 1)">B. Wool</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 10, 2)">C. Leather</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 10, 3)">D. Flowers</p1>
+            </div>
+        </div>
+        <!-- question set 12 -->
+        <div class="custom-container">
+            <!-- container for the actual question -->
+            <div class="row">
+                <h2 class="question">What trait of the capitalist economy was popularized at the time of the Renaissance?</h2>
+            </div>
+            <!-- container for the potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 11, 0)">A. Private property</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 11, 1)">B. Wage labour</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 11, 2)">C. Interest rate </p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 11, 3)">D. Competition</p1>
+            </div>
+        </div>
+        <!-- question set 13 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">What was required to become a knight?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 12, 0)">A. Iron will</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 12, 1)">B. Noble heritage</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 12, 2)">C. Blessing of the church</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 12, 3)">D. All the above</p1>
+            </div>
+        </div>
+        <!-- question set 14 -->
+        <div class="custom-container">
+            <!-- container for actual questions -->
+            <div class="row">
+                <h2 class="question">It was believed that the plague spread due to infected humans and animals going along what routes?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 13, 0)">A. The Silk Road</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 13, 1)">B. Merchant seas</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 13, 2)">C. The Holy Roads</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 13, 3)">D. A and B</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 13, 4)">E. All the above</p1>
+            </div>
+        </div>
+        <!-- question set 15 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">What did the new Renaissance art style glorify?</h2>
+            </div>
+            <!-- cointainer for potential questions -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 14, 0)">A. The human form</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 14, 1)">B. Perspective</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 14, 2)">C. God</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 14, 3)">D. Architecture</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 14, 4)">E. Rebirth</p1>
+            </div>
+        </div>
+        <!-- question set 16 -->
+        <div class="custom-container">
+            <!-- conatiner for actual question -->
+            <div class="row">
+                <h2 class="question">What made knights impractical?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 15, 0)">A. Change in warfare</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 15, 1)">B. Development of projectile weapons</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 15, 2)">C. Decline in economy, leaving no money to be earned as a knight</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 15, 3)">D. None of the above</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 15, 4)">E. A and B</p1>
+            </div>
+        </div>
+        <!-- question set 17 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">Some Christians believed that the black plague was caused by...</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 16, 0)">A. The arrival of the Devil</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 16, 1)">B. God's wrath</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 16, 2)">C. Demonic possession</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 16, 3)">D. The second coming of Christ</p1>
+            </div>
+        </div>
+        <!-- question set 18 -->
+        <div class="custom-container">
+            <!-- container for acutal question -->
+            <div class="row">
+                <h2 class="question">Leonardo Da Vinci ONLY worked on human anatomy.</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 17, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 17, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 19 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">What were the subjects taught in school based on?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 18, 0)">A. Math</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 18, 1)">B. English</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 18, 2)">C. Latin</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 18, 3)">D. Religion</p1>
+            </div>
+        </div>
+        <!-- question set 20 -->
+        <div class="custom-container">
+            <!-- Container for actual questions -->
+            <div class="row">
+                <h2 class="question"> What effect did the plague have on social hierarchies after it was over?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 19, 0)">A. Peasants were more likely to die from the plague, leading to an increase in power among the upper class</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 19, 1)">B. The scarcity of resources caused by the plague led to workers earning lower wages</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 19, 2)">C. The decrease in the amount of workers led to peasants earning higher wages</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 19, 3)">D. None of the above</p1>
+            </div>
+        </div>
+        <!-- question set 21 -->
+        <div class="custom-container">
+            <!-- container for the actual questions -->
+            <div class="row">
+                <h2 class="question">Medieval artwork was often centered around what figures?</h2>
+            </div>
+            <!-- container for the potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 20, 0)">A. Human</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 20, 1)">B. Angels</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 20, 2)">C. Rats</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 20, 3)">D. Skeletons</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 20, 4)">E. The Devil</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 20, 5)">F. God-like figures</p1>
+            </div>
+        </div>
+        <!-- question set 22 -->
+        <div class="custom-container">
+            <!-- container for the actual question -->
+            <div class="row">
+                <h2 class="question">During medieval times, guilds and schools were for the most part the same thing</h2>
+            </div>
+            <!-- container for the potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 21, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 21, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 23 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">It is believed that the Black Death originated in Asia.</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 22, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 22, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 24 -->
+        <div class="custom-container">
+            <!-- container for actual questions -->
+            <div class="row">
+                <h2 class="question">In what century did The Renaissance start?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 23, 0)">A. 1500's</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 23, 1)">B. 1600's</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 23, 2)">C. 1300's</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 23, 3)">D. 1200's</p1>
+            </div>
+        </div>
+        <!-- question set 25 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">During medieval times, while compared with men, women were considered...</h2>
+            </div>
+            <!-- cointainer for potential questions -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 24, 0)">A. Inferior</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 24, 1)">B. Symbols of the Virgin Mary</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 24, 2)">C. Equals</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 24, 3)">D. Superior</p1>
+            </div>
+        </div>
+        <!-- question set 26 -->
+        <div class="custom-container">
+            <!-- conatiner for actual question -->
+            <div class="row">
+                <h2 class="question">Which of the following is NOT a symptom of the Black Death?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 25, 0)">A. Vomiting</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 25, 1)">B. Hallucinations</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 25, 2)">C. Groin Swelling</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 25, 3)">D. None of the above</p1>
+            </div>
+        </div>
+        <!-- question set 27 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">Medieval paintings often depicted babies as ...</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 26, 0)">A. A figure of Jesus</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 26, 1)">B. Cute</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 26, 2)">C. Large</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 26, 3)">D. Angelic</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 26, 4)">E. Naked</p1>
+            </div>
+        </div>
+        <!-- question set 28 -->
+        <div class="custom-container">
+            <!-- container for acutal question -->
+            <div class="row">
+                <h2 class="question">Chivalry was ineffective </h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 27, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 27, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 29 -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">Andreas Vesalius wrote “De Humani Corporis Fabrica”</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 28, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 28, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 30 -->
+        <div class="custom-container">
+            <!-- Container for actual questions -->
+            <div class="row">
+                <h2 class="question">The plague no longer exists today. </h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 29, 0)">A. Yes</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 1)">B. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 2)">C. A</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 3)">D. A and C and B</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 4)">E. C and B</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 5)">F. The second part of E, third part of D, and B</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 6)">G. F and I</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 7)">H. (pos(J - 1)) + i / 2</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 8)">I. None of the above</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 29, 9)">J. All of the above</p1>
+            </div>
+        </div>
+        <!-- container for the final mark text and buttons -->
+        <div class="bottom-container">
+            <!-- container for the final mark -->
+            <div class="mark-container">
+                <p3 class="gradeTxt" id="gradeTxt"></p3>
+                <br>
+                <p3 class="examPrompt" id="examPrompt"></p3>
+            </div>
+            <div class="block"></div>
+            <!-- container for buttons -->
+            <div class="button-container">
+                <button onclick="visible(this, 1)" id="FBut" class="butStyle finBut">Finish quiz</button>
+                <button onclick="visible(this, 2)" id="LBut" class="butStyle invis"></button>
+                <button onclick="visible(this, 3)" id="HBut" class="butStyle invis"></button>
+                <button onclick="visible(this, 4)" id="EBut" class="butStyle invis"></button>
+            </div>
+        </div>
+    </body>
+    <!-- Quiz Javascript -->
+    <script>
+        
+        //variable that tracks the user's mark
+        var Mark = 0;
+        
+        //checks which buttons are visible and does a certain task depending on the button that is clicked on
+        function visible(BObj, ObjType){
+            
+            var temp = window.getComputedStyle(BObj).getPropertyValue("opacity");
+            
+            if(temp !=0){
+                if(ObjType == 1){
+                    clearInterval(x);
+                    MaxTime = 0;
+                    //document.getElementById("TT").innerHTML = "";
+                    gradeCalc();
+                } else if (ObjType == 2){
+                    location.href = "Home.html#less";
+                } else if(ObjType == 3) {
+                    location.href = "Home.html";
+                } else {
+                    location.href = "";
+                }
+            }
+        }
+        
+        function gradeCalc(){
+            
+            //Deactivates and makes finish button inivisible
+            document.getElementById("FBut").style.width = 0;
+            document.getElementById("FBut").style.height = 0;
+            document.getElementById("FBut").style.opacity= 0;
+            document.getElementById("FBut").innerHTML = "";
+            
+            //makes an array of elements with the name question container
+            var questions = document.getElementsByClassName("question-container");
+            
+            //variable for the for loop
+            var j;
+            
+            //goes through each set of question containers, there are 30
+            for(j = 0; j < 30; j++){
+                
+                //makes an array out of the children of the current question container
+                var Qchild = questions[j].children;
+                
+                //variable for the for loop 
+                var k = 0; 
+                //Makes all the questions black, I wanted to do this because it takes away the hover styling that changes the text color to grey. This needs to be off when the quiz is over
+                for(k = 0; k < Qchild.length; k++){
+                    Qchild[k].style.color = 'black';
+                }
+                //end of nested for loop
+                
+                //when the users answer is -1 that means they did not answer the question and it sets the background of the question to red, otherwise if the user's answer is wrong it will set the selected answer text color to red
+                if(ans[j] == -1){
+                    questions[j].style.backgroundColor = 'red';
+                } else {
+                    Qchild[2*ans[j]].style.color = 'red';
+                }
+                
+                //no matter what the right answer will be colored green
+                Qchild[2*correct[j]].style.color = 'green';
+                
+                //This takes the array of user answer and correct answer and compares when they are the same. if so the 1 is added to the mark variable. 
+                if(ans[j] == correct[j]){
+                    Mark++;
+                }
+                console.log(Mark);
+            }
+            //end of first for loop
+            
+            //once the correct array and user array is compared, we calculate the user's percentage grade. write the results in the html that is identified by Id. 
+            Mark = Math.round((Mark / 30) * 100); 
+            console.log(Mark);
+            document.getElementById("gradeTxt").innerHTML = "Final Mark: " + Mark +"%";
+            
+            //when the user achieves the passing grade the Next lesson button is revealed
+            if(Mark >= 80){
+                document.getElementById("examPrompt").innerHTML = "Congrats, you passed! You have successfully completed the course.";
+            } else {
+                document.getElementById("examPrompt").innerHTML = "UH OH, you got a final mark under 80%! You failed the course, go over the each lesson, make sure to pass each quiz, and then try the exam again.";
+            }
+            
+            //the home button is always revealed at the end of every quiz. 
+            document.getElementById("HBut").style.width = '7vw';
+            document.getElementById("HBut").style.height = '2vw';
+            document.getElementById("HBut").style.opacity= '100%';
+            document.getElementById("HBut").innerHTML = "Home";
+            //the lessons button is always revealed at the end of every quiz. 
+            document.getElementById("LBut").style.width = '7vw';
+            document.getElementById("LBut").style.height = '2vw';
+            document.getElementById("LBut").style.opacity= '100%';
+            document.getElementById("LBut").innerHTML = "Lessons";
+            
+        }
+        
+        //Array for user answers, automatically sets each answer to -1
+        var ans = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+        //Array of correct answers
+        var correct = [1, 1, 1, 3, 3, 1, 0, 4, 2, 2, 1, 2, 1, 3, 0, 4, 1, 1, 2, 2, 5, 1, 0, 2, 0, 1, 0, 0, 0, 7];
+        
+        //this function bolds the text that the user clicks on during the quiz
+        function userAns(Uobj, qNum, aNum){
+            
+            //variable for the for loop
+            var i;
+            //finds the parent element of the given object
+            var par = Uobj.parentElement;
+            //makes an array holding the children of the parent element found from the previous line
+            var childz = par.children;
+            
+            //checks that time has not run out, if so then text will not go bold when clicked on
+            if(MaxTime > 0){
+                for(i = 0; i < childz.length; i++){
+                    //checks whether or not text has been bolded previously
+                    if(childz[i] != Uobj){
+                        childz[i].style.fontWeight = 'normal';
+                    } else {
+                        childz[i].style.fontWeight = 'bold';
+                    }
+                }
+            } 
+            
+            //saves users answer to array to mark later on.
+            ans[qNum] = aNum;
+            
+        } 
+        
+        
+        //sets the maximum time aloud to do the quiz. 
+        var MaxTime = 1000 * 60 * 45; 
+        
+        //timer function
+        function timeCalc(){
+            
+            //subtracts 1 second from the timer, allowing the timer to count down
+            MaxTime = MaxTime - 1000;
+            //console.log(MaxTime);
+            
+            //Calculates the remaining time in minutes
+            var min = Math.floor(MaxTime % (1000 * 60 * 60) / (1000 * 60));
+            //console.log(min);
+            //Calcualtes the remaining time in secons
+            var sec = Math.floor(MaxTime % (1000 * 60) / 1000);
+            //console.log(sec);
+            //changes the text in the html that displays the timer
+            document.getElementById("TT").innerHTML = min + "m " + sec + "s";
+            
+            //checks if the timer has reached zero
+            if(MaxTime < 0){
+                //when the timer hits zero the interval should stop calling the funciton by clearing the interval
+                clearInterval(x); 
+                //Changes the html that displays the timer to say Times Up!
+                document.getElementById("TT").innerHTML = "Times Up!";
+                
+                //call gradCalc to calculate the users mark
+                gradeCalc();
+                
+            }
+            
+        }
+        
+        //this startes the timer and calls the function every 1 sec
+        var x = setInterval(timeCalc, 1000);
+        
+    </script>
+</hmtl>

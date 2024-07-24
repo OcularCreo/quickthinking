@@ -1,0 +1,355 @@
+<hmtl>
+    <head>
+        <title>Quiz 1: Medieval Life</title>
+        <!-- Adding in Jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Adding in boostrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Adding responsive design with bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Quiz1.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="start">
+        <!-- This is the nav bar at the top displaying the website title and timer -->
+        <header>
+            <div class="row top">
+                <!-- This is the title of the website at the top left -->
+                <div class="col-lg-6">
+                    <h1 class="title"><span class="title1">Quick</span><span class="title2">Th<span class="red">i</span>nking</span></h1>
+                </div>
+                <!-- This is the timer that is displayed at the top right -->
+                <div class="col-lg-6">
+                    <h2 class="timer" id="TT"></h2>
+                </div>
+            </div>
+        </header>
+        <!-- Question set 1 -->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">A population boom took place due to what?</h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 0, 0)">A. The church encouraging population growth</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 1)">B. Warmer Weather</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 2)">C. Advancements in medicine</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 3)">D. None of the above</p1>
+                <br>
+            </div>
+        </div>
+        <!-- Question set 2 -->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">Early medieval banks were created for what reason?</h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 1, 0)">A. It was too dangerous to keep money</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 1, 1)">B. To protect the wealth of the Nobles</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 1, 2)">C. There was no currency </p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 1, 3)">D. None of the above</p1>
+                <br>
+            </div>
+        </div>
+        <!-- question set 3 -->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">Vassals had to answer to lords.</h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 2, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 2, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 4-->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">Feudalism was a fair and long-lasting economy. </h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 3, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 3, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 5 -->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">Chivalry was created for what reason?</h2>
+            </div>
+            <!-- potentinal answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 4, 0)">A. To control the behaviour of mercenary knights</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 1)">B. To allow knights to kill</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 2)">C. To increase the number of knights</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 3)">D. All the above</p1>
+                <br>
+            </div>
+        </div>
+        <!-- question set 6 -->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">Anyone can become a knight at any age</h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 5, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 5, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 7 -->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">Education was for what class?</h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 6, 0)">A. Royal</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 1)">B. Noble</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 2)">C. Peasant</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 3)">D. All Classes</p1>
+                <br>
+            </div>
+        </div>
+        <!-- question set 8 -->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">Latin was taught in school because... </h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 7, 0)">A. It was an international language</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 1)">B. Religious writings were written in Latin</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 2)">C. Chruch mass was held in latin</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 3)">D. All the above</p1>
+                <br>
+            </div>
+        </div>
+        <!-- question set 9 -->
+        <div class="custom-container">
+            <!-- actual question -->
+            <div class="row">
+                <h2 class="question">Guilds were independent of the church </h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 8, 0)">A. True</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 8, 1)">B. False</p1>
+            </div>
+        </div>
+        <!-- question set 10 -->
+        <div class="custom-container">
+            <div class="row">
+                <!-- actual question -->
+                <h2 class="question">Women did have power over their... </h2>
+            </div>
+            <!-- potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 9, 0)">A. Fathers</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 1)">B. Husbands</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 2)">C. Kinsmen</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 3)">D. None of the above</p1>
+                <br>
+            </div>
+        </div>
+        <!-- Container holding the mark text element and buttons -->
+        <div class="bottom-container">
+            <!-- Mark text element -->
+            <div class="mark-container">
+                <p3 class="gradeTxt" id="gradeTxt"></p3>
+            </div>
+            <!-- Buttons -->
+            <div class="button-container">
+                <!-- Finish button -->
+                <button onclick="visible(this, 1)" id="FBut" class="butStyle finBut">Finish quiz</button>
+                <!-- Next lesson button -->
+                <button onclick="visible(this, 2)" id="LBut" class="butStyle invis"></button>
+                <!-- Home button -->
+                <button onclick="visible(this, 3)" id="HBut" class="butStyle invis"></button>
+            </div>
+        </div>
+    </body>
+    <script>
+        
+        //user's mark variable
+        var Mark = 0; 
+        
+        //This function 
+        function visible(BObj, ObjType){
+            
+            var temp = window.getComputedStyle(BObj).getPropertyValue("opacity");
+            
+            if(temp !=0){
+                if(ObjType == 1){
+                    clearInterval(x); 
+                    //document.getElementById("TT").innerHTML = "";
+                    MaxTime = 0;
+                    gradeCalc();
+                } else if (ObjType == 2){
+                    location.href = "Lesson2.html#start";
+                } else {
+                    location.href = "Home.html";
+                }
+            }
+        }
+        
+        //This functin calculates the user's grade, makes certain buttons visible and invisible at the bottom depending on the mark
+        function gradeCalc(){
+            
+            //disables finish button
+            document.getElementById("FBut").style.width = 0;
+            document.getElementById("FBut").style.height = 0;
+            document.getElementById("FBut").style.opacity= 0;
+            document.getElementById("FBut").innerHTML = "";
+            
+            //Makes array of every element with the class name question-container
+            var questions = document.getElementsByClassName("question-container");
+            
+            //this is for the for loop
+            var j;
+            
+            //goes through each set of question containers, there are 10
+            for(j = 0; j < 10; j++){
+                
+                //creates an array of the children of the current question container
+                var Qchild = questions[j].children;
+                
+                //for the for loop
+                var k = 0; 
+                //Makes all the questions black, I wanted to do this because it takes away the hover styling that changes the text color to grey. This needs to be off when the quiz is over
+                for(k = 0; k < Qchild.length; k++){
+                    Qchild[k].style.color = 'black';
+                }
+                //end of nested for loop
+                
+                //when the users answer is -1 that means they did not answer the question and it sets the background of the question to red, otherwise if the user's answer is wrong it will set the selected answer text color to red
+                if(ans[j] == -1){
+                    questions[j].style.backgroundColor = 'red';
+                } else {
+                    Qchild[2*ans[j]].style.color = 'red';
+                }
+                
+                //no matter what the right answer will be colored green
+                Qchild[2*correct[j]].style.color = 'green';
+                
+                //This takes the array of user answer and correct answer and compares when they are the same. if so the 1 is added to the mark variable.
+                if(ans[j] == correct[j]){
+                    Mark++;
+                    
+                }
+                console.log(Mark);
+            }
+            //end of first for loop
+            
+            //once the correct array and user array is compared, we calculate the user's percentage grade. write the results in the html that is identified by Id.
+            Mark = (Mark / 10) * 100; 
+            console.log(Mark);
+            document.getElementById("gradeTxt").innerHTML = "Final Mark: " + Mark +"%";
+            
+            //only show the next lesson button if the user passes
+            if(Mark > 60){
+                document.getElementById("LBut").style.width = '7vw';
+                document.getElementById("LBut").style.height = '2vw';
+                document.getElementById("LBut").style.opacity= '100%';
+                document.getElementById("LBut").innerHTML = "Next Lesson";
+            }
+            
+            //always reveal the home button no mater what grade the user gets
+            document.getElementById("HBut").style.width = '7vw';
+            document.getElementById("HBut").style.height = '2vw';
+            document.getElementById("HBut").style.opacity= '100%';
+            document.getElementById("HBut").innerHTML = "Home";
+            
+        }
+        
+        //This is an array of the users's answers defaulting every non-answered question to -1
+        var ans = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+        //this is an array of the correct answers
+        var correct = [1, 3, 0, 1, 0, 1, 1, 3, 0, 3];
+        
+        //This function makes the answers that the user clicks on bold, will only make them bold while the quiz is running
+        function userAns(Uobj, qNum, aNum){
+            
+            //variable for for loop
+            var i;
+            //geting parent elemetn of the object
+            var par = Uobj.parentElement;
+            //making array of children bassed off of the parent object from the previous variable
+            var childz = par.children;
+            
+            //This code will only happen when the quiz timer is not at 0
+            if(MaxTime > 0){
+                for(i = 0; i < childz.length; i++){
+                    if(childz[i] != Uobj){
+                        childz[i].style.fontWeight = 'normal';
+                    } else {
+                        childz[i].style.fontWeight = 'bold';
+                    }
+                }
+            } 
+            //This record the user's answers in the ans array to later compare with the correct array
+            ans[qNum] = aNum;
+            
+        } 
+        
+        
+        //sets the maximum time aloud to do the quiz. 
+        var MaxTime = 1000 * 60 * 15; 
+        
+        function timeCalc(){
+            
+            MaxTime = MaxTime - 1000;
+            //console.log(MaxTime);
+            
+            var min = Math.floor(MaxTime % (1000 * 60 * 60) / (1000 * 60));
+            //console.log(min);
+            var sec = Math.floor(MaxTime % (1000 * 60) / 1000);
+            //console.log(sec);
+            document.getElementById("TT").innerHTML = min + "m " + sec + "s";
+            
+            if(MaxTime < 0){
+                clearInterval(x); 
+                document.getElementById("TT").innerHTML = "Times Up!";
+                
+                gradeCalc();
+                
+            }
+            
+        }
+    
+        var x = setInterval(timeCalc, 1000);
+        
+    </script>
+</hmtl>

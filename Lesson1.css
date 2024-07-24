@@ -1,0 +1,323 @@
+/*Styles the website name at the top left of the screen in the navbar*/
+h1 {
+    font-size: 2vw;
+    padding-left: 2vw;
+    color: white;
+    font-family: qualy;
+}
+
+/*Styles second part of website name (thinking)*/
+.title2{
+    font-family: geo;
+    text-transform: uppercase;
+}
+
+/*Styles the container holding the navbar together*/
+.top {
+    width: 100%; 
+    height: 5vw;
+    border: solid black 1px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+/*Styles the links in the navbar at the top right*/
+.lnk {
+    float: right;
+    padding-right: 5vw;
+    font-size: 1vw;
+    color: white;
+    font-family: futuraL;
+}
+
+/*Styles the links to be grey when hovered*/
+.lnk:hover {
+    text-decoration: none; 
+    color: grey; 
+}
+
+/*Styles the banner container and gives it a background image*/
+.banner1{
+    width: 100%; 
+    height: 30vw;
+    background-image: url('https://images.unsplash.com/photo-1544939514-aa98d908bc47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+}
+
+/*Styles the banner text: Medieval Life*/
+.bannerTitle{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-family: louisB;
+    font-size: 8vw;
+    padding-top: 10vw;
+}
+
+/*styles a custom container, used mainly on the topcs and intro container*/
+.custom-container{
+    width: 100%;
+    padding-left: 15vw; 
+    padding-right: 15vw;
+    margin-top: 3vw;
+}
+
+/*Styles the topic title*/
+.topic-title{
+    font-size: 3.25vw;
+    font-family: futuraD;
+    text-transform: uppercase;
+}
+
+/*Styles the topic links*/
+.topics{
+    display: block;
+    font-family: futuraL;
+    font-size: 1.25vw;
+    color: #808080;
+}
+
+/*Styles the topic links when they are hoverd to turn black*/
+.topics:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*Styles the intro title*/
+.intro-title{
+    font-size: 2.75vw;
+    font-family: futuraD;
+    text-transform: uppercase;
+}
+
+/*Styles the intro text/description*/
+.intro-text{
+    font-size: 1.25vw;
+    font-family: geo;
+}
+
+/*Makes anything with this class red, normally used in title to make the letter I red*/
+.red{
+    color: red;
+}
+
+/*Makes a vertical line on the left of the intro text and title*/
+.vLine{
+    border-left: solid black 0.25vw;
+    padding-left: 1.5vw;
+}
+
+/*this style the conatiners for each part of the lesson and the quiz button at the bottom of the page*/
+.custom-container2{
+    width: 100%;
+    padding-left: 15vw; 
+    padding-right: 15vw;
+    margin-top: 10vw; 
+}
+
+/*Styles a container for the video*/
+.video-container{
+    width: 100%;
+    padding-left: 15vw; 
+    padding-right: 15vw;
+    margin-top: 5vw; 
+}
+
+/*Styles every paragraph/description of each topic in the lesson*/
+.para {
+    font-family: futuraL;
+    font-size: 1.5vw; 
+}
+
+/*Styles every topic's title*/
+.paraTitle{
+    font-size: 3vw;
+    font-family: FuturaD;
+    text-transform: uppercase;
+}
+
+/*Same function as paraTitle but centers the title also*/
+.paraTitle-center{
+    font-size: 3vw;
+    font-family: FuturaD;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Style the images for the first lesson topic*/
+.imgSet1{
+    width: 23.5vw;
+    margin-top: 8.5vw;
+    position: relative;
+}
+
+/*Styles the images for the second lesson topic  ***** NO LONGER USED *****
+.imgSet2{
+    width: 90%;
+    margin-top: 1vw;
+}
+*/
+
+/*Styles the image for the third lesson topic    ***** NO LONGER USED *****
+.imgSet3{
+    margin: auto;
+    width: 75%;
+    margin-bottom: 2vw;
+    margin-top: 1.5vw;
+}
+*/
+
+/*Style the image for the fourth lesson topic*/
+.imgSet4{
+    width: 100%;
+}
+
+/*Styles the image for the fifth lesson topic*/
+.imgSet5{
+    width: 100%;
+}
+
+/*Styles the video, changes width and hight*/
+.video1{
+    width: 1095px;
+    height: 615px;
+    display: flex;
+    margin: auto;
+}
+
+/*styles the quiz description/text at the bottom of the page*/
+.quiztxt{
+    font-size: 1vw;
+    font-family: louisR;
+    display: block;
+    text-align: right;
+}
+
+/*Styles the quiz buttons*/
+.quizButton{
+    width: 100%;
+    height: 5vw;
+    font-size: 1.5vw;
+    font-family: futurad;
+    text-transform: uppercase;
+    border-radius: 0.5vw;
+    background-color: red;
+    color: white;
+}
+
+/*styles the words/links with definitions to be red*/
+.kword{
+    color: red;
+}
+
+/*Styles words/links to be red when hovered*/
+.kword:hover{
+    color: red;
+}
+
+/*container for the images of knights (the second set of images)*/
+.img-cont2{
+    width: 19.75vw;
+    height: 26.5vw;
+    background-position: center;
+    background-size: 19.75vw;
+    background-repeat: no-repeat;
+    margin-top: 1vw;
+}
+
+/*container that shows a black background when hovered over the knight images (second set of images)*/
+.cover2{
+    position: absolute;
+    width: 19.75vw;
+    height: 26.5vw;
+    background-color: black;
+    opacity: 0%;
+}
+
+/*container for the image of the city (the second set of images)*/
+.img-cont3{
+    width: 60vw;
+    height: 30vw;
+    background-position: center;
+    background-size: 60vw;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 2vw;
+    margin-top: 1.5vw;
+}
+
+/*container that shows a black background when hovered over the city image (the third set of images)*/
+.cover3{
+    position: absolute;
+    width: 60vw;
+    height: 30vw;
+    background-color: black;
+    opacity: 0%;
+}
+
+/*styles all text that shows up ontop of image*/
+.img-txt{
+    position: relative;
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: white;
+    font-family: louisB;
+    font-size: 1.75vw;
+    text-transform: capitalize;
+}
+
+
+/*styles text under image when image is hovered*/
+.img-title{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    font-family: louisB;
+    text-transform: capitalize;
+}
+
+/*These are my fonts*/
+@font-face {
+    font-family: 'futuraB';
+    src: url('Fonts/FuturaPTBold.otf');
+}
+
+@font-face {
+    font-family: 'futuraD';
+    src: url('Fonts/FuturaPTDemi.otf');
+}
+
+@font-face {
+    font-family: 'futuraL';
+    src: url('Fonts/FuturaPTLight.otf');
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url("Fonts/GeosansLight.ttf");
+}
+
+@font-face {
+    font-family: 'louisB';
+    src: url('Fonts/LouisGeorgeCafeBold.ttf');
+} 
+
+@font-face {
+    font-family: 'louisR';
+    src: url('Fonts/LouisGeorgeCafe.ttf')
+}
+
+@font-face {
+    font-family: 'louisL';
+    src: url('Fonts/LouisGeorgeCafeLight.ttf');
+}
+
+@font-face {
+    font-family: 'qualy';
+    src: url('Fonts/Qualy-Bold.ttf');
+}

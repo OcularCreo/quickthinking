@@ -1,0 +1,343 @@
+/*Styles the title of the website*/
+h1 {
+    font-size: 2vw;
+    padding-left: 2vw;
+    color: white;
+    font-family: qualy;
+}
+
+/*Styles the second part of the website name (thinking)*/
+.title2{
+    font-family: geo;
+    text-transform: uppercase;
+}
+
+/*Styles the container that holds the navbar together*/
+.top {
+    width: 100%; 
+    height: 5vw;
+    border: solid black 1px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+/*Styels navbar links*/
+.lnk {
+    float: right;
+    padding-right: 5vw;
+    font-size: 1vw;
+    color: white;
+    font-family: futuraL;
+}
+
+/*Makes navbar links grey when hovered*/
+.lnk:hover {
+    text-decoration: none; 
+    color: grey; 
+}
+
+/*Styles banner conatiner and gives it a background image*/
+.banner1{
+    width: 100%; 
+    height: 30vw;
+    background-image: url('https://www.zbrushcentral.com/uploads/default/original/4X/d/0/d/d0dada911022fc237b9a802030fd405c6b32c168.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Styles the banner title*/
+.bannerTitle{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-family: louisB;
+    font-size: 8vw;
+    padding-top: 10vw;
+}
+
+/*Colors things red, normally used on the letter I in titles*/
+.red{
+    color: red;
+}
+
+/*Custom container used mainly for the topics and intro content*/
+.custom-container{
+    width: 100%;
+    padding-left: 15vw; 
+    padding-right: 15vw;
+    margin-top: 3vw;
+}
+
+/*styles the topic title*/
+.topic-title{
+    font-size: 3.25vw;
+    font-family: futuraD;
+    text-transform: uppercase;
+}
+
+/*Styles each topic link*/
+.topics{
+    display: block;
+    font-family: futuraL;
+    font-size: 1.25vw;
+    color: #808080;
+}
+
+/*Makes topic links black when hovered*/
+.topics:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*styles the intro title*/
+.intro-title{
+    font-size: 2.75vw;
+    font-family: futuraD;
+    text-transform: uppercase;
+}
+
+/*Styles the intro text/description */
+.intro-text{
+    font-size: 1.25vw;
+    font-family: geo;
+} 
+
+/*adds verticle line on the left of the intro text*/
+.vLine{
+    border-left: solid black 0.25vw;
+    padding-left: 1.5vw;
+}
+
+/*makes custom conatiner, this class is used on nearly every topic container*/
+.custom-container2{
+    width: 100%;
+    padding-left: 15vw; 
+    padding-right: 15vw;
+    margin-top: 10vw; 
+}
+
+/*Styles nearly every topic's paragraphs*/
+.para {
+    font-family: futuraL;
+    font-size: 1.5vw; 
+}
+
+/*Styles certain topic paragraphs*/
+.para2 {
+    font-family: futuraL;
+    font-size: 1.5vw; 
+    margin-bottom: 4vw;
+}
+
+/*Styles nearly every topic's title*/
+.paraTitle{
+    font-size: 3vw;
+    font-family: FuturaD;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+}
+
+/*styles the ring around the rosie text*/
+.paraTitle2{
+    font-size: 4.5vw;
+    font-family: FuturaD;
+    text-transform: uppercase;
+    margin-top: 2vw;
+    cursor: pointer;
+}
+
+/*Styles the prompt text beside the ring around the rosies text*/
+.prompt{
+    font-family: louisR;
+    font-size: 1.5vw; 
+}
+
+/*Lines up the prompt text with the ring around the rosie text*/
+.push{
+    padding-top: 2.5vw; 
+}
+
+/*same function as paraTitle but centers the text as well*/
+.paraTitle-center{
+    font-size: 3vw;
+    font-family: FuturaD;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.5vw;
+}
+
+/*styles images in topic 1    *** NO LONGER USEFUL ****
+.imgSet1{
+    width: 100%; 
+    margin-top: 5vw;
+} */
+
+/*styles images in topic 2*/
+.imgSet2{
+    width: 100%; 
+    margin-bottom: 1vw;
+}
+
+/*styles images in topic 3*/
+.imgSet3{
+    width: 100%; 
+    margin-top: 15vw;
+}
+
+/*styles images in topic 4     **** NO LONGER USEFUL ****
+.imgSet4{
+    width: 100%;
+    height: 20vw;
+    margin-top: 3vw;
+}*/ 
+
+/*styles the monty python video*/
+.video1{
+    width: 100%;
+    margin-top: 1.5vw;
+    height: 41.1vw;
+}
+
+/*styles the ted ed video*/
+.video2{
+    width: 30vw;
+    height: 17vw;
+    margin: auto;
+}
+
+/*Styles the quiz description*/
+.quiztxt{
+    font-size: 1vw;
+    font-family: louisR;
+    display: block;
+    text-align: right;
+}
+
+/*styles the quiz button*/
+.quizButton{
+    width: 100%;
+    height: 5vw;
+    font-size: 1.5vw;
+    font-family: futurad;
+    text-transform: uppercase;
+    border-radius: 0.5vw;
+    background-color: red;
+    color: white;
+}
+
+/*makes the words/links that lead to definitions red*/
+.kword{
+    color: red;
+}
+
+/*also makes them red when hovered*/
+.kword:hover{
+    color: red;
+}
+
+
+/*container for the first image*/
+.img-cont1{
+    width: 70.75vw;
+    height: 47vw;
+    background-position: center;
+    background-size: 70.75vw;
+    background-repeat: no-repeat;
+    margin-top: 5vw;
+}
+
+/*style for black background cover shown when hovered over the first image*/
+.cover1{
+    position: absolute;
+    width: 70.75vw;
+    height: 47vw;
+    background-color: black;
+    opacity: 0%;
+}
+
+/*container for topic 4 images*/
+.img-cont2{
+    width: 33.75vw;
+    height: 20vw;
+    background-position: center;
+    background-size: 34vw;
+    background-repeat: no-repeat;
+    margin-top: 3vw;
+}
+
+/*style for black background cover shown when hovered over either of the two images in topic 4*/
+.cover2{
+    position: absolute;
+    width: 33.75vw;
+    height: 20vw;
+    background-color: black;
+    opacity: 0%;
+}
+
+/*styles all text that shows up ontop of image*/
+.img-txt{
+    position: relative;
+    text-align: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    color: white;
+    font-family: louisB;
+    font-size: 1.75vw;
+    text-transform: capitalize;
+}
+
+
+/*styles text under image when image is hovered*/
+.img-title{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    font-family: louisB;
+    text-transform: capitalize;
+}
+
+
+/*These are my fonts*/
+@font-face {
+    font-family: 'futuraB';
+    src: url('Fonts/FuturaPTBold.otf');
+}
+
+@font-face {
+    font-family: 'futuraD';
+    src: url('Fonts/FuturaPTDemi.otf');
+}
+
+@font-face {
+    font-family: 'futuraL';
+    src: url('Fonts/FuturaPTLight.otf');
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url("Fonts/GeosansLight.ttf");
+}
+
+@font-face {
+    font-family: 'louisB';
+    src: url('Fonts/LouisGeorgeCafeBold.ttf');
+} 
+
+@font-face {
+    font-family: 'louisR';
+    src: url('Fonts/LouisGeorgeCafe.ttf')
+}
+
+@font-face {
+    font-family: 'louisL';
+    src: url('Fonts/LouisGeorgeCafeLight.ttf');
+}
+
+@font-face {
+    font-family: 'qualy';
+    src: url('Fonts/Qualy-Bold.ttf');
+}

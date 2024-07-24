@@ -1,0 +1,169 @@
+/*This style the title at the top left in the navbar*/
+h1 {
+    font-size: 2vw;
+    padding-left: 2vw;
+    color: white;
+    font-family: qualy;
+}
+
+/*This styles the second part of the title (The word Thinking) in the top left of the nav bar*/
+.title2{
+    font-family: geo;
+    text-transform: uppercase;
+}
+
+/*This styles the container of the nav bar at the top of the page*/
+.top {
+    width: 100%; 
+    height: 5vw;
+    border: solid black 1px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+/*Colors elemetns with the class red as red*/
+.red{
+    color:red;
+}
+
+/*Styles the timer text at the top right of the page in the nav bar*/
+.timer{
+    color: white;
+    text-align: right;
+    margin-right: 2vw;
+}
+
+/*styles container that is used for each set of questions*/
+.custom-container{
+    margin-left: 7vw; 
+    margin-right: 7vw;
+    margin-top: 7vw;   
+}
+
+/*styles the container holding the final mark and buttons at the bottom of the page*/
+.bottom-container{
+    margin-left: 7vw; 
+    margin-right: 7vw;
+    margin-top: 7vw; 
+    margin-bottom: 4vw;
+}
+
+/*Styles every button*/
+.butStyle{
+    border-radius: 0.2vw;
+    border: 0px;
+    font-family: futuraD;
+    text-transform: uppercase;
+    color: white; 
+    background-color: black;
+}
+
+/*Styles the grade text at the bottom of the screen*/
+.gradeTxt{
+    font-size: 2vw; 
+    font-family: louisR; 
+    text-align: left; 
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+/*styles the buttons at the bottom of the screen, moves them to the right*/
+.button-container{
+    text-align: right;
+}
+
+/*Styles the actual questions that are being shown during the quizes/exam */
+.question{
+    font-family: FuturaB; 
+    font-size: 3vw;
+    user-select: none;
+}
+
+/*Turns the answers light grey when hovered*/
+.answer:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+/*styles each container holding every set of answers*/
+.question-container{
+    margin-right: 2vw; 
+    margin-left: 2vw;
+    font-family: futuraL; 
+    font-size: 1.75vw;
+    color: black; 
+    user-select: none;
+}
+
+/*Styles the finish button*/
+.finBut{
+    opacity: 100%;
+    width: 7vw; 
+    height: 2vw;
+}
+
+/*Styles some buttons to be invisible in the beginning*/
+.invis{
+    opacity: 0%;
+    width: 0;
+    height: 0;
+}
+
+/*styles the prompts that show at the end of the exam at the bottom of the page*/
+.examPrompt{
+    font-size: 1.5vw; 
+    font-family: louisR; 
+    text-align: left; 
+    margin: 0;
+    padding: 0;
+}
+
+/*adds spacing between exam prompt and buttons at the bottom of the page.*/
+.block{
+    margin: 4vw;
+}
+
+/*Fonts!*/
+@font-face {
+    font-family: 'futuraB';
+    src: url('Fonts/FuturaPTBold.otf');
+}
+
+@font-face {
+    font-family: 'futuraD';
+    src: url('Fonts/FuturaPTDemi.otf');
+}
+
+@font-face {
+    font-family: 'futuraL';
+    src: url('Fonts/FuturaPTLight.otf');
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url("Fonts/GeosansLight.ttf");
+}
+
+@font-face {
+    font-family: 'louisB';
+    src: url('Fonts/LouisGeorgeCafeBold.ttf');
+} 
+
+@font-face {
+    font-family: 'louisR';
+    src: url('Fonts/LouisGeorgeCafe.ttf')
+}
+
+@font-face {
+    font-family: 'louisL';
+    src: url('Fonts/LouisGeorgeCafeLight.ttf');
+}
+
+@font-face {
+    font-family: 'qualy';
+    src: url('Fonts/Qualy-Bold.ttf');
+}

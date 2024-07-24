@@ -1,0 +1,406 @@
+<hmtl>
+    <head>
+        <title>Quiz 2: The Black Death</title>
+        <!-- Adding in Jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Adding in boostrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Adding responsive design with bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Quiz1.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="start">
+        <!-- Top bar with website title and timer -->
+        <header>
+            <div class="row top">
+                <!-- container for title -->
+                <div class="col-lg-6">
+                    <h1 class="title"><span class="title1">Quick</span><span class="title2">Th<span class="red">i</span>nking</span></h1>
+                </div>
+                <!-- container for timer -->
+                <div class="col-lg-6">
+                    <h2 class="timer" id="TT"></h2>
+                </div>
+            </div>
+        </header>
+        <!-- container for first question set -->
+        <div class="custom-container">
+            <!-- container for the actual questions -->
+            <div class="row">
+                <h2 class="question">What does the word renaissance mean?</h2>
+            </div>
+            <!-- container for the potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 0, 0)">A. The new world</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 1)">B. Future</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 2)">C. Rebirth</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 3)">D. Revival</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 0, 4)">E. Comeback</p1>
+            </div>
+        </div>
+        <!-- container for Second question set -->
+        <div class="custom-container">
+            <!-- container for the actual question -->
+            <div class="row">
+                <h2 class="question">Naturalism is a mix between which art styles?</h2>
+            </div>
+            <!-- container for the potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 1, 0)">A. Mysticism and realism</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 1, 1)">B. Abstract and mysticism</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 1, 2)">C. Realism and surrealism </p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 1, 3)">D. Expressionism and realism</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 1, 4)">E. None of the above</p1>
+                <br>
+            </div>
+        </div>
+        <!-- container for Third question set -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">Where was the heart of the renaissance?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 2, 0)">A. Germany</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 2, 1)">B. England</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 2, 2)">C. France</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 2, 3)">D. Norway</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 2, 4)">E. Italy</p1>
+            </div>
+        </div>
+        <!-- container for fourthquestion set -->
+        <div class="custom-container">
+            <!-- container for actual questions -->
+            <div class="row">
+                <h2 class="question">Who explained the human circulatory system first?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 3, 0)">A. Girolamo Fracastoro</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 3, 1)">B. William Harvey</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 3, 2)">C. Leonardo Da Vinci</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 3, 3)">D. Andreas Vesalius</p1>
+            </div>
+        </div>
+        <!-- container for fifth question set -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">Where did new European medical techniques originate from?</h2>
+            </div>
+            <!-- cointainer for potential questions -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 4, 0)">A. China</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 1)">B. Africa</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 2)">C. Japan</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 4, 3)">D. The Middle East</p1>
+            </div>
+        </div>
+        <!-- container for sixth question set -->
+        <div class="custom-container">
+            <!-- conatiner for actual question -->
+            <div class="row">
+                <h2 class="question">Which of the following was the wealthiest family during the renaissance?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 5, 0)">A. Auditore</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 5, 1)">B. Pazzi</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 5, 2)">C. Medici</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 5, 3)">D. Capleone</p1>
+            </div>
+        </div>
+        <!-- container for seventh question set -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">Which of the following physicians was not featured in this lesson?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 6, 0)">A. Paracelsus</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 1)">B. Ambroise Pare</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 2)">C. Girolamo Fracastoro</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 3)">D. Leonardo diCaprio</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 6, 4)">E. None of the above</p1>
+            </div>
+        </div>
+        <!-- container for eigth question set -->
+        <div class="custom-container">
+            <!-- container for acutal question -->
+            <div class="row">
+                <h2 class="question">What outside sources did European physicians gain new information from? </h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 7, 0)">A. Crusaders</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 1)">B. Germans</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 2)">C. Italians</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 3)">D. Muslims</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 4)">E. A and D</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 7, 5)">F. B and C</p1>
+            </div>
+        </div>
+        <!-- container for nineth question set -->
+        <div class="custom-container">
+            <!-- container for actual question -->
+            <div class="row">
+                <h2 class="question">What type of economy replaced the feudal economy?</h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 8, 0)">A. Nationalism</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 8, 1)">B. Mercantilism</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 8, 2)">C. Proto-industrialization</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 8, 3)">D. Capitalism</p1>
+            </div>
+        </div>
+        <!-- container for tenth question set -->
+        <div class="custom-container">
+            <!-- Container for actual questions -->
+            <div class="row">
+                <h2 class="question"> Which was considered a drastic change during the renaissance? </h2>
+            </div>
+            <!-- container for potential answers -->
+            <div class="question-container">
+                <p1 class="answer" onclick="userAns(this, 9, 0)">A. Medicine</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 1)">B. Architecture</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 2)">C. Sexuality</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 3)">D. Weather</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 4)">E. A and B</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 5)">F. A and C</p1>
+                <br>
+                <p1 class="answer" onclick="userAns(this, 9, 6)">G. B and D</p1>
+            </div>
+        </div>
+        <!-- container for the final mark text and buttons -->
+        <div class="bottom-container">
+            <!-- container for the final mark -->
+            <div class="mark-container">
+                <p3 class="gradeTxt" id="gradeTxt"></p3>
+                <br>
+                <p3 class="examPrompt" id="examPrompt"></p3>
+            </div>
+            <div class="block"></div>
+            <!-- container for buttons -->
+            <div class="button-container">
+                <button onclick="visible(this, 1)" id="FBut" class="butStyle finBut">Finish quiz</button>
+                <button onclick="visible(this, 2)" id="LBut" class="butStyle invis"></button>
+                <button onclick="visible(this, 3)" id="HBut" class="butStyle invis"></button>
+                <button onclick="visible(this, 4)" id="EBut" class="butStyle invis"></button>
+            </div>
+        </div>
+    </body>
+    <!-- Quiz Javascript -->
+    <script>
+        
+        //variable that tracks the user's mark
+        var Mark = 0;
+        
+        //checks which buttons are visible and does a certain task depending on the button that is clicked on
+        function visible(BObj, ObjType){
+            
+            var temp = window.getComputedStyle(BObj).getPropertyValue("opacity");
+            
+            if(temp !=0){
+                if(ObjType == 1){
+                    clearInterval(x);
+                    MaxTime = 0;
+                    //document.getElementById("TT").innerHTML = "";
+                    gradeCalc();
+                } else if (ObjType == 2){
+                    location.href = "Home.html#less";
+                } else if(ObjType == 3) {
+                    location.href = "Home.html";
+                } else {
+                    location.href = "Exam.html#start";
+                }
+            }
+        }
+        
+        function gradeCalc(){
+            
+            //Deactivates and makes finish button inivisible
+            document.getElementById("FBut").style.width = 0;
+            document.getElementById("FBut").style.height = 0;
+            document.getElementById("FBut").style.opacity= 0;
+            document.getElementById("FBut").innerHTML = "";
+            
+            //makes an array of elements with the name question container
+            var questions = document.getElementsByClassName("question-container");
+            
+            //variable for the for loop
+            var j;
+            
+            //goes through each set of question containers, there are 10
+            for(j = 0; j < 10; j++){
+                
+                //makes an array out of the children of the current question container
+                var Qchild = questions[j].children;
+                
+                //variable for the for loop 
+                var k = 0; 
+                //Makes all the questions black, I wanted to do this because it takes away the hover styling that changes the text color to grey. This needs to be off when the quiz is over
+                for(k = 0; k < Qchild.length; k++){
+                    Qchild[k].style.color = 'black';
+                }
+                //end of nested for loop
+                
+                //when the users answer is -1 that means they did not answer the question and it sets the background of the question to red, otherwise if the user's answer is wrong it will set the selected answer text color to red
+                if(ans[j] == -1){
+                    questions[j].style.backgroundColor = 'red';
+                } else {
+                    Qchild[2*ans[j]].style.color = 'red';
+                }
+                
+                //no matter what the right answer will be colored green
+                Qchild[2*correct[j]].style.color = 'green';
+                
+                //This takes the array of user answer and correct answer and compares when they are the same. if so the 1 is added to the mark variable. 
+                if(ans[j] == correct[j]){
+                    Mark++;
+                }
+                console.log(Mark);
+            }
+            //end of first for loop
+            
+            //once the correct array and user array is compared, we calculate the user's percentage grade. write the results in the html that is identified by Id. 
+            Mark = (Mark / 10) * 100; 
+            console.log(Mark);
+            document.getElementById("gradeTxt").innerHTML = "Final Mark: " + Mark +"%";
+            
+            //when the user achieves the passing grade the Next lesson button is revealed
+            if(Mark > 60){
+                document.getElementById("EBut").style.width = '7vw';
+                document.getElementById("EBut").style.height = '2vw';
+                document.getElementById("EBut").style.opacity= '100%';
+                document.getElementById("EBut").innerHTML = "Exam";
+                document.getElementById("examPrompt").innerHTML = "Great job! Now that you have passed every quiz you should be ready to take the exam. Want to review somethings before you start? click on the Lessons button to choose which lesson or lessons to review. Otherwise, if you are ready you can start the exam by clicking the exam button. The exam will be made up of 30 questions with a time limit of 45 minutes. Good Luck!";
+            } else {
+                
+            }
+            
+            //the home button is always revealed at the end of every quiz. 
+            document.getElementById("HBut").style.width = '7vw';
+            document.getElementById("HBut").style.height = '2vw';
+            document.getElementById("HBut").style.opacity= '100%';
+            document.getElementById("HBut").innerHTML = "Home";
+            //the lessons button is always revealed at the end of every quiz. 
+            document.getElementById("LBut").style.width = '7vw';
+            document.getElementById("LBut").style.height = '2vw';
+            document.getElementById("LBut").style.opacity= '100%';
+            document.getElementById("LBut").innerHTML = "Lessons";
+            
+        }
+        
+        //Array for user answers, automatically sets each answer to -1
+        var ans = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+        //Array of correct answers
+        var correct = [2, 0, 4, 1, 3, 2, 3, 4, 3, 4];
+        
+        //this function bolds the text that the user clicks on during the quiz
+        function userAns(Uobj, qNum, aNum){
+            
+            //variable for the for loop
+            var i;
+            //finds the parent element of the given object
+            var par = Uobj.parentElement;
+            //makes an array holding the children of the parent element found from the previous line
+            var childz = par.children;
+            
+            //checks that time has not run out, if so then text will not go bold when clicked on
+            if(MaxTime > 0){
+                for(i = 0; i < childz.length; i++){
+                    //checks whether or not text has been bolded previously
+                    if(childz[i] != Uobj){
+                        childz[i].style.fontWeight = 'normal';
+                    } else {
+                        childz[i].style.fontWeight = 'bold';
+                    }
+                }
+            } 
+            
+            //saves users answer to array to mark later on.
+            ans[qNum] = aNum;
+            
+        } 
+        
+        
+        //sets the maximum time aloud to do the quiz. 
+        var MaxTime = 1000 * 60 * 15; 
+        
+        //timer function
+        function timeCalc(){
+            
+            //subtracts 1 second from the timer, allowing the timer to count down
+            MaxTime = MaxTime - 1000;
+            //console.log(MaxTime);
+            
+            //Calculates the remaining time in minutes
+            var min = Math.floor(MaxTime % (1000 * 60 * 60) / (1000 * 60));
+            //console.log(min);
+            //Calcualtes the remaining time in secons
+            var sec = Math.floor(MaxTime % (1000 * 60) / 1000);
+            //console.log(sec);
+            //changes the text in the html that displays the timer
+            document.getElementById("TT").innerHTML = min + "m " + sec + "s";
+            
+            //checks if the timer has reached zero
+            if(MaxTime < 0){
+                //when the timer hits zero the interval should stop calling the funciton by clearing the interval
+                clearInterval(x); 
+                //Changes the html that displays the timer to say Times Up!
+                document.getElementById("TT").innerHTML = "Times Up!";
+                
+                //call gradCalc to calculate the users mark
+                gradeCalc();
+                
+            }
+            
+        }
+        
+        //this startes the timer and calls the function every 1 sec
+        var x = setInterval(timeCalc, 1000);
+        
+    </script>
+</hmtl>
